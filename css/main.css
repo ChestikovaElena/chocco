@@ -145,7 +145,7 @@ body {
 .menu__list {
   display: flex;
   align-items: center;
-  margin-right: 0;
+  margin-right: -27px;
 }
 
 .menu__item {
@@ -171,7 +171,7 @@ body {
 
 .features {
   display: flex;
-  margin-right: 0;
+  margin-right: -35px;
 }
 
 .features__item {
@@ -389,6 +389,7 @@ body {
 
 .reviews__content {
   margin-left: 40px;
+  margin-top: 20px;
   width: 51%;
 }
 
@@ -396,7 +397,6 @@ body {
   font-size: 30px;
   font-weight: 700;
   color: #292929;
-  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -441,7 +441,7 @@ body {
 .reviews__switcher {
   display: flex;
   justify-content: center;
-  margin-right: 0;
+  margin-right: -6px;
 }
 
 .reviews__switcher-item {
@@ -485,6 +485,9 @@ body {
 .form__row--interval--large {
   margin-bottom: 30px;
 }
+.form__row:last-child {
+  margin-bottom: 0;
+}
 
 .form__block {
   flex: 1;
@@ -522,7 +525,7 @@ body {
   flex-wrap: wrap;
   margin-bottom: 15px;
 }
-.form__controls:last-child {
+.form__controls--elem--last {
   margin-bottom: 0;
 }
 
@@ -581,6 +584,10 @@ body {
   top: 20%;
   right: 3%;
   z-index: 100;
+}
+
+.fixed-menu__list {
+  margin-bottom: -5px;
 }
 
 .fixed-menu__item {

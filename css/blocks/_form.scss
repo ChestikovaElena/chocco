@@ -18,6 +18,10 @@
   &--interval--large {
     margin-bottom: 30px;
   }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__block {
@@ -58,7 +62,7 @@
   flex-wrap: wrap;
   margin-bottom: 15px;
 
-  &:last-child {
+  &--elem--last {
     margin-bottom: 0;
   }
 }
