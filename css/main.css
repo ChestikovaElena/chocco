@@ -89,7 +89,7 @@ body {
 }
 
 .hero {
-  background: url("../../img/bg/leaf-big.png") right bottom no-repeat;
+  background: url("../img/bg/leaf-big.png") right bottom no-repeat;
   background-color: #61C4D9;
   height: 100vh;
   min-height: 650px;
@@ -100,13 +100,13 @@ body {
   position: absolute;
   bottom: -40px;
   left: 2%;
-  content: url("../../img/bg/leaf-left.png");
+  content: url("../img/bg/leaf-left.png");
 }
 .hero::after {
   position: absolute;
   bottom: -55px;
   right: 0;
-  content: url("../../img/bg/leafs-berries.png");
+  content: url("../img/bg/leafs-berries.png");
 }
 
 .hero__container {
@@ -115,7 +115,7 @@ body {
   justify-content: space-between;
   height: 100%;
   padding: 24px 0 45px;
-  background: url("../../img/bg/bar.png") right center/50% auto no-repeat;
+  background: url("../img/bg/bar.png") right center/50% auto no-repeat;
 }
 
 .hero__section-title {
