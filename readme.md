@@ -2,7 +2,8 @@
 
 ---
 
-**LandingPage** _https://chestikovaelena.github.io/chocco/_
+**LandingPage**
+_https://chestikovaelena.github.io/chocco/_
 
 ---
 
