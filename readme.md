@@ -1,7 +1,5 @@
 # CHOCCO
 
----
-
 **LandingPage**
 _https://chestikovaelena.github.io/chocco/_
 
