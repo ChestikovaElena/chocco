@@ -209,6 +209,20 @@ body {
   color: #fff;
   background-color: #497870;
 }
+.btn--theme--green {
+  background-color: #497870;
+  color: #fff;
+}
+.btn--theme--green:hover {
+  color: #497870;
+  background-color: #fff;
+}
+.btn--theme--transparent {
+  background-color: transparent;
+  color: #497870;
+  text-transform: none;
+  font-weight: 400;
+}
 
 .section {
   height: 100vh;
@@ -216,6 +230,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.section--font-color--green {
+  color: #497870;
+}
+.section--font-color--green .section__title {
+  color: inherit;
 }
 
 .section__title {
@@ -225,6 +245,17 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #292929;
+}
+
+.benefits-section {
+  position: relative;
+  background: url("../../img/bg/leaf-grey.png") left -6% top 55% no-repeat;
+}
+.benefits-section:before {
+  content: url("../../img/bg/rasberry.png");
+  position: absolute;
+  bottom: -120px;
+  left: -50px;
 }
 
 .headline {
@@ -306,13 +337,241 @@ body {
   line-height: 1.3;
 }
 
-.benefits-section {
+.reviews-section {
   position: relative;
-  background: url("../../img/bg/leaf-grey.png") left -6% top 55% no-repeat;
 }
-.benefits-section:before {
-  content: url("../../img/bg/rasberry.png");
+.reviews-section:before {
+  content: url("../../img/bg/berry-mix.png");
   position: absolute;
-  bottom: -120px;
+  bottom: -110px;
   left: -50px;
+}
+
+.reviews__title {
+  margin-bottom: 20px;
+}
+
+.reviews__display {
+  background: url("../../img/bg/berry-grey.png") right top 15% no-repeat;
+  background-color: #F8FAF9;
+  padding: 50px 40px 40px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.reviews__display:before {
+  content: "";
+  display: block;
+  width: 83px;
+  height: 83px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: -65px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.reviews__display-inner {
+  display: flex;
+}
+
+.reviews__avatar {
+  width: 250px;
+  height: 270px;
+}
+
+.reviews-avatar__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.reviews__content {
+  margin-left: 40px;
+  width: 51%;
+}
+
+.reviews__subtitle {
+  font-size: 30px;
+  font-weight: 700;
+  color: #292929;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.reviews__text {
+  line-height: 1.23;
+  margin-bottom: 25px;
+}
+
+.reviews__author {
+  font-weight: 500;
+  color: #292929;
+}
+
+.interactive-avatar {
+  width: 80px;
+  height: 80px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.interactive-avatar--active {
+  border-color: #365A49;
+}
+
+.interactive-avatar__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+}
+
+.interactive-avatar__img {
+  display: block;
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+}
+
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+  margin-right: 0;
+}
+
+.reviews__switcher-item {
+  margin-right: 6px;
+}
+
+.order-section {
+  background: url("../../img/bg/pattern-berry.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.order-section:before {
+  content: url("../../img/bg/blueberry.png");
+  position: absolute;
+  bottom: 80px;
+  left: 5%;
+}
+.order-section:after {
+  content: url("../../img/bg/leaf-right.png");
+  position: absolute;
+  bottom: 45px;
+  right: 1%;
+}
+
+.form {
+  display: flex;
+}
+
+.form__col {
+  flex: 1;
+  margin-right: 20px;
+}
+.form__col:last-child {
+  margin-right: 0;
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 5px;
+}
+.form__row--interval--large {
+  margin-bottom: 30px;
+}
+
+.form__block {
+  flex: 1;
+  margin-right: 20px;
+}
+.form__block:last-child {
+  margin-right: 0;
+}
+
+.form__input {
+  width: 100%;
+  border: 3px solid transparent;
+  border-radius: 4px;
+  padding: 18px 10px;
+  font-family: "Open Sans";
+  color: #000;
+  font-size: 14px;
+}
+.form__input--textarea {
+  height: 155px;
+  resize: none;
+}
+.form__input:focus {
+  outline: none;
+  border-color: #DEE2BD;
+}
+
+.form__title {
+  -webkit-user-select: none;
+          user-select: none;
+}
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.form__controls:last-child {
+  margin-bottom: 0;
+}
+
+.form__btns--interval--large {
+  margin-top: 45px;
+}
+
+.radio {
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
+  margin-right: 24px;
+}
+.radio:last-child {
+  margin-right: 0;
+}
+.radio--checkbox .radio__visible {
+  border-radius: 0;
+}
+.radio--checkbox .radio__visible:before {
+  background: url("../../img/icons/checkmark.png") center center no-repeat;
+}
+
+.radio__elem {
+  display: none;
+}
+.radio__elem:checked ~ .radio__visible:before {
+  display: block;
+}
+
+.radio__visible {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: block;
+  background-color: #fff;
+  position: relative;
+  margin-right: 10px;
+}
+.radio__visible:before {
+  content: "";
+  display: none;
+  width: 14px;
+  height: 14px;
+  background-color: #365A49;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

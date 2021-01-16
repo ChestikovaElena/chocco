@@ -13,13 +13,25 @@ $darkGreen: #497870;
 @import "layout";
 
 //blocks
-@import "blocks/hero";
-@import "blocks/header";
-@import "blocks/features";
-@import "blocks/feature";
-@import "blocks/btn";
-@import "blocks/section";
-@import "blocks/headline";
-@import "blocks/benefits";
-@import "blocks/benefit";
-@import "blocks/benefits-section";
+@import "blocks/_hero";
+@import "blocks/_header";
+@import "blocks/_menu";
+@import "blocks/_phone";
+@import "blocks/_features";
+@import "blocks/_feature";
+@import "blocks/_btn";
+
+@import "blocks/_section";
+@import "blocks/_benefits-section";
+@import "blocks/_headline";
+@import "blocks/_benefits";
+@import "blocks/_benefit";
+
+@import "blocks/_reviews-section";
+@import "blocks/_reviews";
+@import "blocks/_interactive-avatar";
+@import "blocks/_reviews__switcher";
+
+@import "blocks/_order-section";
+@import "blocks/_form";
+@import "blocks/_radio";
