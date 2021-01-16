@@ -249,10 +249,10 @@ body {
 
 .benefits-section {
   position: relative;
-  background: url("../../img/bg/leaf-grey.png") left -6% top 55% no-repeat;
+  background: url("../img/bg/leaf-grey.png") left -6% top 55% no-repeat;
 }
 .benefits-section:before {
-  content: url("../../img/bg/rasberry.png");
+  content: url("../img/bg/rasberry.png");
   position: absolute;
   bottom: -120px;
   left: -50px;
@@ -281,7 +281,7 @@ body {
   position: relative;
 }
 .benefits__item:before {
-  content: url("../../img/icons/separator.png");
+  content: url("../img/icons/separator.png");
   position: absolute;
   top: 55px;
   right: 0;
@@ -341,7 +341,7 @@ body {
   position: relative;
 }
 .reviews-section:before {
-  content: url("../../img/bg/berry-mix.png");
+  content: url("../img/bg/berry-mix.png");
   position: absolute;
   bottom: -110px;
   left: -50px;
@@ -352,7 +352,7 @@ body {
 }
 
 .reviews__display {
-  background: url("../../img/bg/berry-grey.png") right top 15% no-repeat;
+  background: url("../img/bg/berry-grey.png") right top 15% no-repeat;
   background-color: #F8FAF9;
   padding: 50px 40px 40px;
   margin-bottom: 10px;
@@ -449,18 +449,18 @@ body {
 }
 
 .order-section {
-  background: url("../../img/bg/pattern-berry.png") center center no-repeat;
+  background: url("../img/bg/pattern-berry.png") center center no-repeat;
   background-size: cover;
   position: relative;
 }
 .order-section:before {
-  content: url("../../img/bg/blueberry.png");
+  content: url("../img/bg/blueberry.png");
   position: absolute;
   bottom: 80px;
   left: 5%;
 }
 .order-section:after {
-  content: url("../../img/bg/leaf-right.png");
+  content: url("../img/bg/leaf-right.png");
   position: absolute;
   bottom: 45px;
   right: 1%;
@@ -544,7 +544,7 @@ body {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible:before {
-  background: url("../../img/icons/checkmark.png") center center no-repeat;
+  background: url("../img/icons/checkmark.png") center center no-repeat;
 }
 
 .radio__elem {
