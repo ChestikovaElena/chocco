@@ -586,15 +586,14 @@ body {
   z-index: 100;
 }
 
-.fixed-menu__list {
-  margin-bottom: -5px;
-}
-
 .fixed-menu__item {
   margin-bottom: 5px;
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #fff;
+}
+.fixed-menu__item:last-child {
+  margin-bottom: 0;
 }
 
 .fixed-menu__link {

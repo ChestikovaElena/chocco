@@ -5,10 +5,6 @@
   z-index: $z-fixed-menu;
 }
 
-.fixed-menu__list {
-  margin-bottom: -5px;
-}
-
 .fixed-menu__item {
   margin-bottom: 5px;
 
@@ -16,6 +12,10 @@
     .fixed-menu__link {
       border-color: #fff;
     }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
