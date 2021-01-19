@@ -60,8 +60,12 @@ button {
   background-color: transparent;
 }
 
-body {
+html {
   font-size: 18px;
+}
+
+body {
+  font-size: 1rem;
   line-height: 1.42;
   font-weight: 400;
   font-family: 'Alegreya Sans', Arial, sans-serif;

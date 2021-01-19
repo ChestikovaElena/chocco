@@ -1,9 +1,12 @@
 .reviews__switcher {
   display: flex;
   justify-content: center;
-  margin-right: -6px;
 }
 
 .reviews__switcher-item {
-  margin-right: 6px;
+  margin-right: .33rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }

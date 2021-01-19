@@ -2,7 +2,7 @@
   display: flex;
   cursor: pointer;
   user-select: none;
-  margin-right: 24px;
+  margin-right: 1.33rem;
 
   &:last-child {
     margin-right: 0;
@@ -30,8 +30,8 @@
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: 1.44rem;
+  height: 1.44rem;
   border-radius: 50%;
   display: block;
   background-color: #fff;
@@ -41,8 +41,8 @@
   &:before {
     content: "";
     display: none;
-    width: 14px;
-    height: 14px;
+    width: .77rem;
+    height: .77rem;
     background-color: #365A49;
     border-radius: 50%;
     position: absolute;

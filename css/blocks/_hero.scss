@@ -2,20 +2,20 @@
   background: url("../img/bg/leaf-big.png") right bottom no-repeat;
   background-color: $blue;
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.11rem;
   color: #fff;
   position: relative;
 
   &:before {
     position: absolute;
-    bottom: -40px;
+    bottom: -2.22rem;
     left: 2%;
     content: url("../img/bg/leaf-left.png");
   }
 
   &::after {
     position: absolute;
-    bottom: -55px;
+    bottom: -3.05rem;
     right: 0;
     content: url("../img/bg/leafs-berries.png");
   }
@@ -26,7 +26,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 45px;
+  padding: 1.33rem 0 2.5rem;
   background:  url("../img/bg/bar.png") right center / 50% auto no-repeat,;
 }
 
@@ -35,15 +35,15 @@
 }
 
 .hero__title {
-  font-size: 48px;
+  font-size: 2.66rem;
   line-height: 1.1;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 1.66rem;
   text-transform: uppercase;
 }
 
 .hero__title-desc {
-  font-size: 21px;
-  margin-bottom: 28px;
+  font-size: 1.16rem;
+  margin-bottom: 1.15rem;
   padding-right: 10%;
 }
