@@ -685,7 +685,7 @@ body {
 @media screen and (max-width: 768px) {
   .form {
     flex-direction: column;
-    padding: 0 18%;
+    padding: 0 14%;
   }
 }
 @media screen and (max-width: 480px) {
