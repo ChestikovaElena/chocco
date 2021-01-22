@@ -9,3 +9,4 @@ _https://chestikovaelena.github.io/chocco/_
 * БЭМ-нейминг
 * Препроцессор SCSS
 * SVG-иконки собраны в спрайт
+* Респонсив лейаут
