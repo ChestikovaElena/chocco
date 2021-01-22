@@ -4,7 +4,7 @@
   &:before {
     content: url("../img/bg/berry-mix.png");
     position: absolute;
-    bottom: -6.11rem;
-    left: -2.77rem;
+    bottom: rem(-110px);
+    left: rem(-50px);
   }
 }

@@ -3,11 +3,17 @@
 }
 
 .feature__icon {
-  width: 2.5rem;
-  margin-right: .38rem;
+  width: rem(45px);
+  margin-right: rem(7px);
+}
+
+.feature__icon-elem {
+  fill: #C6F7FF;
+  width: 41px;
+  height: 41px;
 }
 
 .feature__text {
-  font-size: 0.88rem;
-  max-width: 4.72rem;
+  font-size: rem(16px);
+  max-width: rem(85px);
 }

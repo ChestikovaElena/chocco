@@ -1,12 +1,19 @@
 $conteinerWidth: 940px;
 $baseFontSize: 18px;
 
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
 //colors
 $blue: #61C4D9;
 $darkGreen: #497870;
 
 //z-indexes
 $z-fixed-menu: 100;
+
+@import "media";
 
 //normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
@@ -18,6 +25,7 @@ $z-fixed-menu: 100;
 //blocks
 @import "blocks/_hero";
 @import "blocks/_header";
+@import "blocks/_logo";
 @import "blocks/_menu";
 @import "blocks/_phone";
 @import "blocks/_features";
@@ -39,4 +47,11 @@ $z-fixed-menu: 100;
 @import "blocks/_form";
 @import "blocks/_radio";
 
+@import "blocks/_contacts-section";
+@import "blocks/_footer";
+@import "blocks/_contacts";
+@import "blocks/_socials";
+
 @import "blocks/_fixed-menu";
+@import "blocks/_hamburger";
+@import "blocks/_overlay";

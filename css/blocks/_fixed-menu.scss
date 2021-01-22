@@ -3,10 +3,14 @@
   top: 20%;
   right: 3%;
   z-index: $z-fixed-menu;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .fixed-menu__item {
-  margin-bottom: .27rem;
+  margin-bottom: rem(5px);
 
   &--active {
     .fixed-menu__link {
@@ -20,18 +24,18 @@
 }
 
 .fixed-menu__link {
-  width: .88rem;
-  height: .88rem;
+  width: rem(16px);
+  height: rem(16px);
   border-radius: 50%;
-  border: 0.05rem solid transparent;
+  border: rem(1px) solid transparent;
   display: block;
   position: relative;
 
   &:before {
     content: "";
     display: block;
-    width: .33rem;
-    height: .33rem;
+    width: rem(6px);
+    height: rem(6px);
     border-radius: 50%;
     background-color: #fff;
     position: absolute;

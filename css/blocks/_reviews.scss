@@ -1,36 +1,60 @@
 .reviews__title {
-  margin-bottom: 1.11rem;
+  margin-bottom: rem(20px);
+
+  @include tablets {
+    margin-bottom: rem(35px);
+  }
 }
 
 .reviews__display {
   background: url("../img/bg/berry-grey.png") right top 15% no-repeat;
   background-color: #F8FAF9;
-  padding: 2.77rem 2.22rem 2.22rem;
-  margin-bottom: .55rem;
+  padding: rem(50px) rem(40px) rem(40px);
+  margin-bottom: rem(10px);
   overflow: hidden;
   position: relative;
+
+  @include tablets {
+    padding: rem(60px) rem(20px) rem(25px);
+    margin-bottom: rem(30px);
+  }
 
   &:before {
     content: "";
     display: block;
-    width: 4.61rem;
-    height: 4.61rem;
+    width: rem(83px);
+    height: rem(83px);
     border-radius: 50%;
     background-color: #fff;
     position: absolute;
-    top: -3.61rem;
+    top: rem(-65px);
     left: 50%;
     transform: translate(-50%);
+
+    @include tablets {
+      top: rem(-43px);
+    }
   }
 }
 
 .reviews__display-inner {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+  }
 }
 
 .reviews__avatar {
-  width: 13.88rem;
-  height: 15rem;
+  width: rem(250px);
+  height: rem(270px);
+
+  @include tablets {
+    width: rem(135px);
+    height: rem(135px);
+  }
 }
 
 .reviews-avatar__img {
@@ -40,21 +64,27 @@
 }
 
 .reviews__content {
-  margin-left: 2.22rem;
-  margin-top: 1.11rem;
+  margin-left: rem(40px);
+  margin-top: rem(20px);
   width: 51%;
+
+  @include tablets {
+    margin-left: 0;
+    margin-top: rem(20px);
+    width: 97%;
+  }
 }
 
 .reviews__subtitle {
-  font-size: 1.66rem;
+  font-size: rem(30px);
   font-weight: 700;
   color: #292929;
-  margin-bottom: .55rem;
+  margin-bottom: rem(10px);
 }
 
 .reviews__text {
   line-height: 1.23;
-  margin-bottom: 1.38rem;
+  margin-bottom: rem(25px);
 }
 
 .reviews__author {

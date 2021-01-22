@@ -1,0 +1,20 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: rem(20px) 0;
+  // top: 88%;
+  color: #292929;
+  background-color: #fff;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include phones {
+    flex-direction: column;
+  }
+}

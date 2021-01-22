@@ -1,0 +1,23 @@
+.socials__list {
+  display: flex;
+}
+
+.socials__item {
+  margin-left: rem(15px);
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.socials__link:hover {
+  .socials__icon {
+    fill: #292929;
+  }
+}
+
+.socials__icon {
+  width: rem(20px);
+  height: rem(20px);
+  fill: #B3B3B3;
+}

@@ -5,6 +5,15 @@ body {
 
 html {
   box-sizing: border-box;
+  font-size: $baseFontSize;
+
+  @include tablets {
+    font-size: $baseFontSize - 1px;
+  }
+
+  @include phones {
+    font-size: $baseFontSize - 2px;
+  }
 }
 
 *,
@@ -60,12 +69,7 @@ button {
   background-color: transparent;
 }
 
-html {
-  font-size: 18px;
-}
-
 body {
-  font-size: 1rem;
   line-height: 1.42;
   font-weight: 400;
   font-family: 'Alegreya Sans', Arial, sans-serif;
@@ -79,13 +83,13 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: $conteinerWidth + 20px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: $conteinerWidth;
+  width: 95%;
+  max-width: $conteinerWidth;
   margin: 0 auto;
   position: relative;
 }

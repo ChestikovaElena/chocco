@@ -6,14 +6,22 @@
   &:before {
     content: url("../img/bg/blueberry.png");
     position: absolute;
-    bottom: 4.44rem;
+    bottom: rem(80px);
     left: 5%;
+    
+    @include tablets {
+      display: none;
+    }
   }
 
   &:after {
     content: url("../img/bg/leaf-right.png");
     position: absolute;
-    bottom: 2.5rem;
+    bottom: rem(45px);
     right: 1%;
+
+    @include tablets {
+      display: none;
+    }
   }
 }

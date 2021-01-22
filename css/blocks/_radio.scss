@@ -2,7 +2,13 @@
   display: flex;
   cursor: pointer;
   user-select: none;
-  margin-right: 1.33rem;
+  align-items: center;
+  margin-right: rem(24px);
+
+  @include phones {
+    margin-bottom: rem(10px);
+
+  }
 
   &:last-child {
     margin-right: 0;
@@ -30,19 +36,19 @@
 }
 
 .radio__visible {
-  width: 1.44rem;
-  height: 1.44rem;
+  width: rem(26px);
+  height: rem(26px);
   border-radius: 50%;
   display: block;
   background-color: #fff;
   position: relative;
-  margin-right: 10px;
+  margin-right: rem(10px);
 
   &:before {
     content: "";
     display: none;
-    width: .77rem;
-    height: .77rem;
+    width: rem(14px);
+    height: rem(14px);
     background-color: #365A49;
     border-radius: 50%;
     position: absolute;
