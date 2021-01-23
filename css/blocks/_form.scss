@@ -21,6 +21,11 @@
 
   @include tablets {
     margin-right: 0;
+    margin-top: rem(15px);
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 }
 
@@ -34,10 +39,6 @@
 
   &--interval--large {
     margin-bottom: rem(30px);
-
-    @include tablets {
-      margin-top: rem(15px);
-    }
   }
 
   &:last-child {
