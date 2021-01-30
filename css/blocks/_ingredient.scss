@@ -1,6 +1,7 @@
 .ingredient {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: #000;
   font-size: rem(16px);
   line-height: 1.5;
@@ -13,6 +14,11 @@
 
 .ingredient__col {
   display: flex;
+  align-items: center;
+}
+
+.ingredient__col--align--right {
+  flex-shrink: 0;
 }
 
 .ingredient__icon {
@@ -24,4 +30,8 @@
 .ingredient__name {
   font-weight: 500;
   margin-right: rem(12px);
+}
+
+.ingredient__weight {
+
 }
