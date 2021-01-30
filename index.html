@@ -152,6 +152,117 @@
           </ul>
         </div>
       </section>
+      <section class="section products-section">
+        <div class="container">
+          <div class="products-slider">
+            <div class="products-slider__arrows">
+              <a href="#" class="products-slider__arrow products-slider__arrow--direction--left" id="left">
+                <svg class="arrow-icon">
+                  <use xlink:href="img/icons/sprite.svg#left"></use>
+                </svg>
+              </a>
+              <a href="#" class="products-slider__arrow products-slider__arrow--direction--right" id="right">
+                <svg class="arrow-icon">
+                  <use xlink:href="img/icons/sprite.svg#right"></use>
+                </svg>
+              </a>
+            </div>
+            <ul class="products">
+              <li class="products__item product">
+                <div class="product__col product__col--img">
+                  <div class="product__img">
+                    <img src="img/content/granola-bar.png" alt="Фото батончиков" class="product__img-elem">
+                  </div>
+                </div>
+                <div class="product__col product__col--contant">
+                  <div class="product__ingredients">
+                    <a href="#" class="product__ingredients-btn">
+                      <svg class="btn-icon">
+                        <use xlink:href="img/icons/sprite.svg#bar"></use>
+                      </svg>
+                      <span class="btn-text">состав</span>
+                    </a>
+                    <div class="product__ingredients-content">
+                      <ul class="ingredients__list">
+                        <li class="ingredients__item ingredient">
+                          <div class="ingredient__col">
+                            <img src="img/icons/products/grape.png" alt="" class="ingredient__icon">
+                            <span class="ingredient__name">Виноград</span>
+                          </div>
+                          <div class="ingredient__col ingredient__col--align--right">
+                            <span span class="ingredient__weight">25 г</span>
+                          </div>
+                        </li>
+                        <li class="ingredients__item ingredient">
+                          <div class="ingredient__col">
+                            <img src="img/icons/products/nut.png" alt="" class="ingredient__icon">
+                            <span class="ingredient__name">Грецкий орех</span>
+                          </div>
+                          <div class="ingredient__col ingredient__col--align--right">
+                            <span class="ingredient__weight">32 г</span>
+                          </div>
+                        </li>
+                        <li class="ingredients__item ingredient">
+                          <div class="ingredient__col">
+                            <img src="img/icons/products/almond.png" alt="" class="ingredient__icon">
+                            <span class="ingredient__name">Кунжутное семя</span>
+                          </div>
+                          <div class="ingredient__col ingredient__col--align--right">
+                            <span class="ingredient__weight">20 г</span>
+                          </div>
+                        </li>
+                        <li class="ingredients__item ingredient">
+                          <div class="ingredient__col">
+                            <img src="img/icons/products/washing-powder.png" alt="" class="ingredient__icon">
+                            <span class="ingredient__name">Сухое молоко</span>
+                          </div>
+                          <div class="ingredient__col ingredient__col--align--right">
+                            <span class="ingredient__weight">10 г</span>
+                          </div>
+                        </li>
+                        <li class="ingredients__item ingredient">
+                          <div class="ingredient__col">
+                            <img src="img/icons/products/apitherapy.png" alt="" class="ingredient__icon">
+                            <span class="ingredient__name">Зам.сахара</span>
+                          </div>
+                          <div class="ingredient__col ingredient__col--align--right">
+                            <span class="ingredient__weight">4 г</span>
+                          </div>
+                        </li>
+                        <li class="ingredients__item ingredient">
+                          <div class="ingredient__col">
+                            <img src="img/icons/products/beans.png" alt="" class="ingredient__icon">
+                            <span class="ingredient__name">Какао бобы</span>
+                          </div>
+                          <div class="ingredient__col ingredient__col--align--right">
+                            <span class="ingredient__weight">4 г</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h2 class="product__title">Батончик "Гранола виноград"</h2>
+                  <div class="product__desc">Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</div>
+                  <ul class="product__params">
+                    <li class="product__param">
+                      <span class="product__param-name">Калорийность</span>
+                      <span class="product__param-value">110 ккал</span>
+                    </li>
+                    <li class="product__param">
+                      <span class="product__param-name">Вес</span>
+                      <span class="product__param-value">95 грамм</span>
+                    </li>
+                  </ul>
+                  <div class="product__last">
+                    <span class="product__last-cost">140 &#8381</span>
+                    <button type="submit" class="btn btn--theme--green">Заказать</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <section class="section reviews-section">
         <div class="container">
           <h2 class="section__title reviews__title">отзывы</h2>
@@ -358,7 +469,7 @@
   </div>
   <div class="overlay" id="overlay">
     <div class="overlay__menu" id="overlay__menu">
-      <nav class="menu menu--fixed">
+      <nav class="menu menu--vertical">
         <ul class="menu__list">
           <li class="menu__item">
             <a href="#" class="menu__link">О нас</a>

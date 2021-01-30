@@ -1,0 +1,27 @@
+.ingredient {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  font-size: rem(16px);
+  line-height: 1.5;
+  margin-bottom: rem(20px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.ingredient__col {
+  display: flex;
+}
+
+.ingredient__icon {
+  width: rem(32px);
+  height: rem(32px);
+  margin-right: rem(12px);
+}
+
+.ingredient__name {
+  font-weight: 500;
+  margin-right: rem(12px);
+}
