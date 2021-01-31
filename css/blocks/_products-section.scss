@@ -42,6 +42,10 @@
   }
 }
 
+.products-slider__arrow--direction--right {
+  transform: rotate(180deg);
+}
+
 .arrow-icon {
   cursor: pointer;
   text-decoration: none;

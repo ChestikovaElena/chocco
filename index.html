@@ -87,7 +87,7 @@
           </div>
         </div>
       </section>
-      <section class="section benefits-section">
+      <section class="section benefits-section" id="benefits">
         <div class="container">
           <div class="headline">
             <h2 class="section__title headline__title">Почему CHOCCO?</h2>
@@ -152,19 +152,21 @@
           </ul>
         </div>
       </section>
-      <section class="section products-section">
+      <section class="section products-section" id="products">
         <div class="container">
           <div class="products-slider">
             <div class="products-slider__arrows">
               <a href="#" class="products-slider__arrow products-slider__arrow--direction--left" id="left">
-                <svg class="arrow-icon">
+                <!-- <svg class="arrow-icon">
                   <use xlink:href="img/icons/sprite.svg#left"></use>
-                </svg>
+                </svg> -->
+                <img src="img/icons/products/left.png" class="arrow-icon">
               </a>
               <a href="#" class="products-slider__arrow products-slider__arrow--direction--right" id="right">
-                <svg class="arrow-icon">
+                <!-- <svg class="arrow-icon">
                   <use xlink:href="img/icons/sprite.svg#right"></use>
-                </svg>
+                </svg> -->
+                <img src="img/icons/products/left.png" class="arrow-icon">
               </a>
             </div>
             <ul class="products">
@@ -263,7 +265,7 @@
           </div>
         </div>
       </section>
-      <section class="section reviews-section">
+      <section class="section reviews-section" id="reviews">
         <div class="container">
           <h2 class="section__title reviews__title">отзывы</h2>
           <div class="reviews">
@@ -305,7 +307,7 @@
           </div>
         </div>
       </section>
-      <section class="section order-section section--font-color--green">
+      <section class="section order-section section--font-color--green" id="order">
         <div class="container">
           <h2 class="section__title">Закажите доставку</h2>
           <form class="form">
@@ -379,7 +381,7 @@
           </form>
         </div>
       </section>
-      <section class="section contacts-section">
+      <section class="section contacts-section" id="contacts">
         <div class="map"></div>
         <footer class="footer">
           <div class="container footer__container">
@@ -472,10 +474,10 @@
       <nav class="menu menu--vertical">
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="#" class="menu__link">О нас</a>
+            <a href="#benefits" class="menu__link">О нас</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Батончики</a>
+            <a href="#products" class="menu__link">Батончики</a>
           </li>
           <li class="menu__item">
             <a href="#" class="menu__link">Команда</a>
@@ -484,13 +486,13 @@
             <a href="#" class="menu__link">Меню</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Отзывы</a>
+            <a href="#reviews" class="menu__link">Отзывы</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Как мы работаем</a>
+            <a href="#order" class="menu__link">Как мы работаем</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Контакты</a>
+            <a href="#contacts" class="menu__link">Контакты</a>
           </li>
         </ul>
       </nav>

@@ -550,6 +550,10 @@ body {
   }
 }
 
+.products-slider__arrow--direction--right {
+  transform: rotate(180deg);
+}
+
 .arrow-icon {
   cursor: pointer;
   text-decoration: none;
@@ -1330,4 +1334,7 @@ body {
 }
 .menu--vertical .menu__list .menu__item {
   margin-right: 0;
+}
+.menu--vertical .menu__list .menu__item:last-child {
+  margin-bottom: 0;
 }
