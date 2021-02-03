@@ -1,4 +1,15 @@
 .product {
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  // width: 100%;
+
+  // @include tablets {
+  //   flex-direction: column;
+  // }
+}
+
+.product__conteiner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -29,7 +40,7 @@
   }
 
   @include phones {
-    width: 100%;
+    width: 85%;
   }
 }
 
