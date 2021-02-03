@@ -1,4 +1,18 @@
 .members {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.members__item {
+  margin-bottom: rem(15px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

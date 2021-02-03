@@ -845,7 +845,21 @@ body {
 
 .members {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .members {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.members__item {
+  margin-bottom: 0.8333333333rem;
+}
+.members__item:last-child {
+  margin-bottom: 0;
 }
 
 .member {
@@ -878,6 +892,7 @@ body {
 }
 .member__link--active ~ .member__content {
   height: 100%;
+  transition: 0.4s;
 }
 
 .member__link-name {
@@ -899,7 +914,7 @@ body {
 .member__content {
   overflow: hidden;
   height: 0;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .member__content-wrapper {

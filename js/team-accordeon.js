@@ -1,10 +1,14 @@
-// const members = document.querySelectorAll(".member__link");
+$(".member__link").click(function(e) {
+  e.preventDefault();
 
-// members.addEventListener("click", function(event){
-//   event.preventDefault();
-//   const target = event.target;
-
-//   if(target.classList.contains("member__link")){
-//     target.classList.add("member__link--active");
-//   }
-// })
+  if(this.classList.contains("member__link--active")) {
+    this.classList.remove("member__link--active");
+  } else {
+    $(".member__link").each( function(index, item) {
+      if ($(item).hasClass("member__link--active")) {
+        this.classList.remove("member__link--active");
+      }
+    })
+    this.classList.add("member__link--active");
+  }
+})

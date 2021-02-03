@@ -31,6 +31,7 @@
 
     ~ .member__content {
       height: 100%;
+      transition: .4s;
     }
   }
 }
@@ -54,7 +55,7 @@
 .member__content {
   overflow: hidden;
   height: 0;
-  transition: .5s;
+  transition: .4s;
 }
 
 .member__content-wrapper {
