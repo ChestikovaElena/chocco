@@ -868,7 +868,7 @@ body {
 
 .member__avatar {
   max-width: 12.2222222222rem;
-  height: 16.1111111111rem;
+  max-height: 16.1111111111rem;
   object-fit: cover;
   margin-bottom: 1.1111111111rem;
 }
