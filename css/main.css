@@ -543,6 +543,7 @@ body {
 .slick-next {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   display: block;
   width: 44px;
   height: 44px;
@@ -951,6 +952,26 @@ body {
   }
 }
 
+.reviews__list {
+  position: relative;
+  min-height: 15.5555555556rem;
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+.reviews__item--active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
+}
+
 .reviews__display {
   background: url("../img/bg/berry-grey.png") right top 15% no-repeat;
   background-color: #F8FAF9;
@@ -1044,10 +1065,11 @@ body {
 .interactive-avatar {
   width: 4.4444444444rem;
   height: 4.4444444444rem;
-  border: 0.2222222222rem solid transparent;
+  border: 0.1666666667rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
 .interactive-avatar--active {
   border-color: #365A49;
@@ -1269,6 +1291,29 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.modal {
+  display: none;
+}
+.modal.error-modal .modal__content {
+  color: red;
+}
+.modal.fancybox-content {
+  padding: 0 !important;
+}
+
+.modal__container {
+  background-color: #fff;
+  padding: 1.9444444444rem 3.3333333333rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__content {
+  margin-bottom: 0.8333333333rem;
+  color: #000;
 }
 
 .contacts-section {

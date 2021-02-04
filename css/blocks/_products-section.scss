@@ -36,6 +36,7 @@
 .slick-next {
   position: absolute;
   top: 50%;
+  transform:translateY(-50%);
   display: block;
   width: 44px;
   height: 44px;

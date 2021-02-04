@@ -1,10 +1,11 @@
 .interactive-avatar {
   width: rem(80px);
   height: rem(80px);
-  border: rem(4px) solid transparent;
+  border: rem(3px) solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 
   &--active {
     border-color: #365A49;
