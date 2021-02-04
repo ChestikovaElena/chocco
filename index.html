@@ -157,6 +157,10 @@
       <section class="section products-section" id="products">
         <div class="container">
           <div class="products-slider">
+            <div class="product-slider__arrows">
+              <a href="#" class="product-slider__arrow product-slider__arrow--dir--left"></a>
+              <a href="#" class="product-slider__arrow product-slider__arrow--dir--right"></a>
+            </div>
             <ul class="products">
               <li class="products__item product">
                 <div class="product__conteiner">
@@ -371,10 +375,10 @@
       <section class="section team-section" id="team">
         <div class="container">
           <h2 class="section__title team__title">команда</h2>
-          <ul class="team__list members">
+          <ul class="team__list team__list--version--desktop members">
             <li class="members__item member">
               <div class="member__avatar">
-                <img src="img/content/member-1.jpg" alt="Фото работника">
+                <img src="img/content/member-1.jpg" class="member__avatar-img" alt="Фото работника">
               </div>
               <a href="#" class="member__link">
                 <span class="member__link-name">Борис Федорович</span>
@@ -441,6 +445,76 @@
               </div>
             </li>
           </ul>
+          <ul class="team__list team__list--version--mobile members">
+            <li class="members__item member">
+              <a href="#" class="member__link">
+                <span class="member__link-name">Борис Федорович</span>
+                <span class="member__link-icon"></span>
+              </a>
+              <div class="member__content">
+                <div class="member__content-wrapper">
+                  <div class="member__avatar">
+                    <img src="img/content/member-1.jpg" alt="Фото работника">
+                  </div>
+                  <span class="member__position">Главный технолог</span>
+                  <span class="member__role">
+                    Отвечает за вкусовые качества и калорийность.
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="members__item member">
+              <a href="#" class="member__link member__link--active">
+                <span class="member__link-name">Алла Ивановна</span>
+                <span class="member__link-icon"></span>
+              </a>
+              <div class="member__content">
+                <div class="member__content-wrapper">
+                  <div class="member__avatar">
+                  <img src="img/content/member-2.jpg" alt="Фото работника">
+                </div>
+                  <span class="member__position">Специалист по упаковке</span>
+                  <span class="member__role">
+                    Автор запоминающегося стиля наших батончиков.
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="members__item member">
+              <a href="#" class="member__link">
+                <span class="member__link-name">Кирилл Матросов</span>
+                <span class="member__link-icon"></span>
+              </a>
+              <div class="member__content">
+                <div class="member__content-wrapper">
+                  <div class="member__avatar">
+                    <img src="img/content/member-3.jpg" alt="Фото работника">
+                  </div>
+                  <span class="member__position">Оператор</span>
+                  <span class="member__role">
+                    С радостью поможет подобрать батончики и оформить заказ.
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li class="members__item member">
+              <a href="#" class="member__link">
+                <span class="member__link-name">Мила Рыжкова</span>
+                <span class="member__link-icon"></span>
+              </a>
+              <div class="member__content">
+                <div class="member__content-wrapper">
+                  <div class="member__avatar">
+                    <img src="img/content/member-4.jpg" alt="Фото работника">
+                  </div>
+                  <span class="member__position">PR, маркетинг</span>
+                  <span class="member__role">
+                    По всем вопросам сотрудничества и рекламы писать только Миле.
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="section reviews-section" id="reviews">
@@ -448,7 +522,7 @@
           <h2 class="section__title reviews__title">отзывы</h2>
           <div class="reviews">
             <ul class="reviews__list">
-              <li class="reviews__item">
+              <li class="reviews__item" data-linked-with="one">
                 <div class="reviews__display">
                   <div class="reviews__display-inner">
                     <div class="reviews__avatar">
@@ -468,7 +542,7 @@
                   </div>
                 </div>
               </li>
-              <li class="reviews__item reviews__item--active">
+              <li class="reviews__item reviews__item--active" data-linked-with="two">
                 <div class="reviews__display">
                   <div class="reviews__display-inner">
                     <div class="reviews__avatar">
@@ -488,7 +562,7 @@
                   </div>
                 </div>
               </li>
-              <li class="reviews__item">
+              <li class="reviews__item" data-linked-with="three">
                 <div class="reviews__display">
                   <div class="reviews__display-inner">
                     <div class="reviews__avatar">
@@ -512,17 +586,17 @@
             </ul>
             <ul class="reviews__switcher">
               <li class="reviews__switcher-item interactive-avatar">
-                <a href="#" class="interactive-avatar__link">
+                <a href="#" class="interactive-avatar__link" data-open="one">
                   <img src="img/content/avatar-1.jpg" alt="Фото пользователя" class="interactive-avatar__img">
                 </a>
               </li>
               <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                <a href="#" class="interactive-avatar__link">
+                <a href="#" class="interactive-avatar__link" data-open="two">
                   <img src="img/content/avatar-2.jpg" alt="Фото пользователя" class="interactive-avatar__img">
                 </a>
               </li>
               <li class="reviews__switcher-item interactive-avatar">
-                <a href="#" class="interactive-avatar__link">
+                <a href="#" class="interactive-avatar__link" data-open="three">
                   <img src="img/content/avatar-3.jpg" alt="Фото пользователя" class="interactive-avatar__img">
                 </a>
               </li>
@@ -732,7 +806,6 @@
     </div>
   </div>
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>

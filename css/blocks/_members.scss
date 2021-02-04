@@ -1,16 +1,30 @@
-.members {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.team__list {
+  &--version--desktop {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 
+  &--version--mobile {
+    display: none;
+  }
+  
   @include tablets {
-    flex-direction: column;
-    align-items: center;
+    &--version--desktop {
+      display: none;
+    }
+
+    &--version--mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
 
 .members__item {
   margin-bottom: rem(15px);
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;

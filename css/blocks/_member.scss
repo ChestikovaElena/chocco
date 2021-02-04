@@ -1,5 +1,5 @@
 .member {
-  width: rem(220px);
+  width: 24%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,13 +8,27 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @include tablets {
+    width: 40%;
+    margin-right: 0;
+  }
+
+  @include phones {
+    width: 50%;
+  }
 }
 
 .member__avatar {
-  width: rem(220px);
+  max-width: rem(220px);
   height: rem(290px);
   object-fit: cover;
   margin-bottom: rem(20px);
+
+  @include phones {
+    width: rem(150px);
+    height: rem(200px);
+  }
 }
 
 .member__link {
@@ -31,7 +45,7 @@
 
     ~ .member__content {
       height: 100%;
-      transition: .4s;
+      transition: height .4s;
     }
   }
 }
@@ -42,6 +56,7 @@
   line-height: 1.2;
   color: #292929;
   margin-right: rem(5px);
+  text-align: center;
 }
 
 .member__link-icon {
@@ -52,10 +67,18 @@
   border-top: 9px solid #365A49;
 }
 
+.team__list--version--desktop .member__content {
+  position: absolute;
+  top: 100%;
+}
+
 .member__content {
   overflow: hidden;
   height: 0;
-  transition: .4s;
+  transition: height .3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .member__content-wrapper {
@@ -67,6 +90,10 @@
 
 .member__position {
   margin-bottom: rem(5px);
+
+  @include tablets {
+    font-weight: 700;
+  }
 }
 
 .member__role {
