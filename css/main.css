@@ -545,7 +545,7 @@ body {
 }
 .product-slider__arrow--dir--right {
   right: 0;
-  transform: translateY(-50%) rotate(-180deg);
+  transform: translateY(-50%) scale(-1, 1);
 }
 @media screen and (max-width: 768px) {
   .product-slider__arrow {
