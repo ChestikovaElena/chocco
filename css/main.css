@@ -533,8 +533,8 @@ body {
   background: url("../img/icons/products/left.png") no-repeat;
   background-size: contain;
   display: block;
-  width: 0.7222222222rem;
-  height: 1.5555555556rem;
+  width: 13px;
+  height: 28px;
   position: absolute;
   top: 50%;
   z-index: 90;
@@ -1315,15 +1315,23 @@ body {
 
 .modal__container {
   background-color: #fff;
-  padding: 1.9444444444rem 3.3333333333rem;
+  padding: 2.5rem 3.6111111111rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .modal__content {
-  margin-bottom: 0.8333333333rem;
+  margin-bottom: 2.2222222222rem;
   color: #000;
+}
+
+.input-error {
+  border-color: red;
+}
+
+.error-modal {
+  color: red;
 }
 
 .contacts-section {
