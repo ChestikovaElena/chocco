@@ -115,9 +115,8 @@
 .form__input--message {
   position: absolute;
   left: -99999px;
-  right: 0;
-  bottom: rem(-70px);
   opacity: 0;
+  bottom: rem(-70px);
   transition: opacity .3s;
   background-color: #ce3f3f;
   color: #fff;
@@ -153,8 +152,8 @@
   width: 0;
   height: 0;
   position: absolute;
-  top: -50%;
-  left: 20%;
+  top: rem(-30px);
+  left: rem(40px);
   z-index: 10;
 }
 
