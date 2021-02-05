@@ -1328,6 +1328,22 @@ body {
 
 .input-error {
   border-color: red;
+  position: relative;
+}
+.input-error:after {
+  content: "!";
+  display: inline-block;
+  align-items: center;
+  line-height: 20px;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
 }
 
 .error-modal {
