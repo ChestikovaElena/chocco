@@ -613,11 +613,17 @@
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Имя</div>
-                  <input type="text" name="name" class="form__input">
+                  <div class="form__input-wrap">
+                    <input type="text" name="name" class="form__input">
+                    <div class="form__input--message">Как вас зовут?</div>
+                  </div>
                 </label>
                 <label class="form__block">
                   <div class="form__title">Телефон</div>
-                  <input type="text" name="phone" class="form__input">
+                  <div class="form__input-wrap">
+                    <input type="text" name="phone" class="form__input">
+                    <div class="form__input--message">Телефон для связи с вами</div>
+                  </div>
                 </label>
               </div>
               <div class="form__row">
@@ -649,7 +655,10 @@
               <div class="form__row form__row--interval--large">
                 <label class="form__block">
                   <div class="form__title">Комментарий</div>
-                  <textarea name="comment" class="form__input form__input--textarea"></textarea>
+                  <div class="form__input-wrap">
+                    <textarea name="comment" class="form__input form__input--textarea"></textarea>
+                    <div class="form__input--message">Ваши пожелания</div>
+                  </div>
                 </label>
               </div>
               <div class="form__controls">

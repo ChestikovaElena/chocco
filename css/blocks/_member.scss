@@ -20,14 +20,14 @@
 }
 
 .member__avatar {
-  max-width: rem(220px);
-  max-height: rem(290px);
+  max-width: 220px;
+  max-height: 290px;
   object-fit: cover;
   margin-bottom: rem(20px);
 
   @include phones {
-    width: rem(150px);
-    height: rem(200px);
+    width: 150px;
+    height: 200px;
   }
 }
 
@@ -75,7 +75,7 @@
 .member__content {
   overflow: hidden;
   height: 0;
-  transition: height .3s;
+  transition: all .3s;
   display: flex;
   flex-direction: column;
   align-items: center;

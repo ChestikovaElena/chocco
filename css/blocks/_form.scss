@@ -49,10 +49,38 @@
 .form__block {
   flex: 1;
   margin-right: rem(20px);
+  position: relative;
 
   &:last-child {
     margin-right: 0;
   }
+}
+
+.form__input-wrap {
+  position: relative;
+}
+
+.form__input-wrap:after {
+  content: '!';
+  font-size: 18px;
+  font-weight: 700;
+  display: none;
+  text-align: center;
+  line-height: 23px;
+  color: #fff;
+  width: 23px;
+  height: 23px;
+  background-color: #ce3f3f;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+
+.form__input-wrap--active:after {
+  display: block;
 }
 
 .form__input {
@@ -63,6 +91,7 @@
   font-family: "Open Sans";
   color: #000;
   font-size: rem(14px);
+  position: relative;
 
   @include tablets {
     padding: rem(10px) rem(10px);
@@ -81,6 +110,52 @@
     outline: none;
     border-color: #DEE2BD;
   }
+}
+
+.form__input--message {
+  position: absolute;
+  left: -99999px;
+  right: 0;
+  bottom: rem(-70px);
+  opacity: 0;
+  transition: opacity .3s;
+  background-color: #ce3f3f;
+  color: #fff;
+  font-weight: 400;
+  padding: rem(16px);
+  border-radius: 5px;
+  min-width: rem(80px);
+  z-index: 10;
+
+  &--active {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.form__input--message:before {
+  content: "";
+  display: block;
+  height: rem(20px);
+  left: 0;
+  right: rem(-20px);
+  top: 0;
+  background-color: transparent;
+  position: absolute;
+  z-index: 10;
+}
+
+.form__input--message:after {
+  content: "";
+  border: 15px solid transparent;
+  border-bottom: 20px solid #ce3f3f;
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -50%;
+  left: 20%;
+  z-index: 10;
 }
 
 .form__title {

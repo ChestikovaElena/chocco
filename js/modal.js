@@ -2,6 +2,7 @@ const validateFields = (form, fieldsArray) => {
   fieldsArray.forEach(field => {
     if(field.val().trim() === "") {
       field.addClass("input-error");
+      field.closest(".form__input-wrap").addClass("form__input-wrap--active");
     }
   });
 
@@ -24,6 +25,8 @@ $('.form').submit((e) => {
   
   modal.removeClass("error-modal");
   $(".input-error").removeClass("input-error");
+  $(".form__input-wrap--active").removeClass("form__input-wrap--active");
+  $(".form__input--message--active").removeClass("form__input--message--active");
 
   const isValid = validateFields(form, [name, phone, comment, to]);
   
@@ -63,4 +66,13 @@ $(".app-close-modal").click(e => {
   e.preventDefault();
 
   $.fancybox.close();
+})
+
+$(".form__input").focusin(function () {
+  const inputWrap = $(this).closest(".form__input-wrap--active");
+  $(".form__input--message--active").removeClass("form__input--message--active");
+  if (inputWrap.length !== 0) {
+    inputWrap.removeClass("form__input-wrap--active");
+    inputWrap.find(".form__input--message").addClass("form__input--message--active");
+  }
 })
