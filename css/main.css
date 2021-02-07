@@ -845,26 +845,29 @@ body {
   margin-bottom: 0;
 }
 
-.member {
+.members__item {
   width: 24%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 2%;
 }
-.member:last-child {
+.members__item:last-child {
   margin-right: 0;
 }
 @media screen and (max-width: 768px) {
-  .member {
+  .members__item {
     width: 40%;
     margin-right: 0;
   }
 }
 @media screen and (max-width: 480px) {
-  .member {
+  .members__item {
     width: 50%;
   }
+}
+.members__item--active .member__link .member__link-icon {
+  transform: rotate(180deg);
 }
 
 .member__avatar {
@@ -887,12 +890,8 @@ body {
   align-items: center;
   margin-bottom: 0.5555555556rem;
 }
-.member__link--active .member__link-icon {
-  transform: rotate(180deg);
-}
-.member__link--active ~ .member__content {
-  height: 100%;
-  transition: height 0.4s;
+.member__link .member__link-icon {
+  transform: rotate(0deg);
 }
 
 .member__link-name {

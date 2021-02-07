@@ -1,4 +1,4 @@
-.member {
+.members__item {
   width: 24%;
   display: flex;
   flex-direction: column;
@@ -16,6 +16,14 @@
 
   @include phones {
     width: 50%;
+  }
+
+  &--active {
+    .member__link {
+      .member__link-icon {
+        transform: rotate(180deg);
+      }
+    }
   }
 }
 
@@ -38,15 +46,8 @@
   align-items: center;
   margin-bottom: rem(10px);
 
-  &--active {
-    .member__link-icon {
-      transform: rotate(180deg);
-    }
-
-    ~ .member__content {
-      height: 100%;
-      transition: height .4s;
-    }
+  .member__link-icon {
+    transform: rotate(0deg);
   }
 }
 
