@@ -1,0 +1,72 @@
+.bar {
+  display: flex;
+  height: 100%;
+
+  &__trigger {
+    height: 100%;
+    width: 102px;
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    &--1 {
+      background: url("../img/bg/slide-1.png") left 32% top 5%/cover no-repeat;
+    }
+
+    &--2 {
+      background: url("../img/bg/slide-2.png") left 32% top 5%/cover no-repeat;
+    }
+
+    &--3 {
+      background: url("../img/bg/slide-3.png") left 32% top 5%/cover no-repeat;
+    }
+
+    @include phones {
+      width: 90px;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 28%;
+    left: -295%;
+    transform: rotate(-90deg);
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    width: 50vh;
+    height: 50px;
+    z-index: 99;
+
+    @include phones {
+      left: -345%;
+    }
+  }
+
+  &__content-wrap {
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+  }
+
+  &__content {
+    background-color: rgba(51, 53, 55, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    height: 100%;
+    padding: 30px 80px 0 40px;
+  }
+}
