@@ -20,15 +20,15 @@
     }
 
     &--1 {
-      background: url("../img/bg/slide-1.png") left 32% top 5%/cover no-repeat;
+      background: url("../img/bg/slide-1.jpg") left 32% top 5%/cover no-repeat;
     }
 
     &--2 {
-      background: url("../img/bg/slide-2.png") left 32% top 5%/cover no-repeat;
+      background: url("../img/bg/slide-2.jpg") left 32% top 5%/cover no-repeat;
     }
 
     &--3 {
-      background: url("../img/bg/slide-3.png") left 32% top 5%/cover no-repeat;
+      background: url("../img/bg/slide-3.jpg") left 32% top 5%/cover no-repeat;
     }
 
     @include phones {

@@ -953,7 +953,7 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image: url("../img/bg/menu.png");
+  background-image: url("../img/bg/menu.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1012,13 +1012,13 @@ body {
   background: rgba(0, 0, 0, 0.4);
 }
 .bar__trigger--1 {
-  background: url("../img/bg/slide-1.png") left 32% top 5%/cover no-repeat;
+  background: url("../img/bg/slide-1.jpg") left 32% top 5%/cover no-repeat;
 }
 .bar__trigger--2 {
-  background: url("../img/bg/slide-2.png") left 32% top 5%/cover no-repeat;
+  background: url("../img/bg/slide-2.jpg") left 32% top 5%/cover no-repeat;
 }
 .bar__trigger--3 {
-  background: url("../img/bg/slide-3.png") left 32% top 5%/cover no-repeat;
+  background: url("../img/bg/slide-3.jpg") left 32% top 5%/cover no-repeat;
 }
 @media screen and (max-width: 480px) {
   .bar__trigger {
