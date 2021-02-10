@@ -57,6 +57,7 @@
     width: 0;
     overflow: hidden;
     transition: 1s;
+    z-index: 999;
   }
 
   &__content {
@@ -68,5 +69,16 @@
     color: white;
     height: 100%;
     padding: 30px 80px 0 40px;
+
+    @include phone {
+      padding: 50px 80px 0 40px;
+    }
   }
+
+  @include phones {
+    &.active {
+      position: absolute;
+    }
+  }
+  
 }

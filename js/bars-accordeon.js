@@ -29,10 +29,10 @@ function closeActiveItem(item) {
 
 function openItem(item) {
   const contentWrap = item.querySelector('[data-open]');
-  const content = contentWrap.firstElementChild;
+  //const content = contentWrap.firstElementChild;
   const openWidth = calctWidth(item);
 
-  content.style.minWidth = `${openWidth}px`;
+  //content.style.minWidth = `${openWidth}px`;
   contentWrap.style.width = `${openWidth}px`;
   item.classList.add('active');
 
@@ -50,11 +50,14 @@ function calctWidth(item) {
   const windowWidth = window.innerWidth;
   const triggers = list.querySelectorAll('[data-trigger]');
   const triggersWidth = triggers[0].clientWidth * triggers.length;
-  const isMobile = window.matchMedia('(max-width: 768px)').matches;
-
-  if (isMobile) {
+  const isTablet = window.matchMedia('(max-width: 768px) && (min-width: 480px)').matches;
+  const isMobile = window.matchMedia('(max-width: 480px)').matches;
+  
+  if (isTablet) {
     return windowWidth - triggersWidth;
+  } else if (isMobile) {
+    return windowWidth - triggersWidth / triggers.length;
+  } else {
+    return (windowWidth - triggersWidth) > 524 ? 524 : windowWidth - triggersWidth;
   }
-  return 524
-
 }

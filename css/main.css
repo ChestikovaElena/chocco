@@ -984,11 +984,9 @@ body {
 }
 
 .bars__list {
-  position: absolute;
-  top: 0;
-  right: 0;
   height: 100%;
   display: flex;
+  justify-content: flex-end;
 }
 
 .bar {
@@ -1046,6 +1044,7 @@ body {
   width: 0;
   overflow: hidden;
   transition: 1s;
+  z-index: 999;
 }
 .bar__content {
   background-color: rgba(51, 53, 55, 0.8);
@@ -1056,6 +1055,11 @@ body {
   color: white;
   height: 100%;
   padding: 30px 80px 0 40px;
+}
+@media screen and (max-width: 480px) {
+  .bar.active {
+    position: absolute;
+  }
 }
 
 .reviews-section {
