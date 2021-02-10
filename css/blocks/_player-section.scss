@@ -1,0 +1,21 @@
+.player-section {
+  position: relative;
+  
+  &:before {
+    position: absolute;
+    bottom: rem(-100px);
+    right: 0;
+    content: url("../img/bg/leaf-berry.png");
+    z-index: 999;
+  }
+
+  &__container {
+    height: rem(405px);
+    width: rem(660px);
+    margin: 0 auto;
+  }
+}
+
+.player__title {
+  margin-bottom: rem(31px);
+}

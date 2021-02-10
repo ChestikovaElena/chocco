@@ -39,17 +39,17 @@
   &__title {
     position: absolute;
     bottom: 28%;
-    left: -295%;
+    left: -325%;
     transform: rotate(-90deg);
     color: #fff;
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: 700;
     width: 50vh;
     height: 50px;
     z-index: 99;
 
     @include phones {
-      left: -345%;
+      left: -373%;
     }
   }
 
@@ -64,16 +64,19 @@
     background-color: rgba(51, 53, 55, 0.8);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    font-size: 16px;
-    line-height: 24px;
+    font-size: rem(16px);
+    line-height: rem(24px);
     color: white;
     height: 100%;
-    padding: 30px 80px 0 40px;
+    padding: rem(30px) rem(80px) 0 rem(40px);
+    opacity: 0;
 
-    @include phone {
-      padding: 50px 80px 0 40px;
+    @include phones {
+      padding: rem(50px) rem(80px) 0 rem(40px);
     }
   }
+
+  
 
   @include phones {
     &.active {
@@ -81,4 +84,9 @@
     }
   }
   
+}
+
+.bar.active .bar__content{
+  opacity: 1;
+  transition: 5s;
 }

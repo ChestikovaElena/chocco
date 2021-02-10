@@ -38,7 +38,7 @@
                   <a href="#reviews" class="menu__link">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#order" class="menu__link">Как мы работаем</a>
+                  <a href="#player" class="menu__link">Как мы работаем</a>
                 </li>
                 <li class="menu__item">
                   <a href="#contacts" class="menu__link">Контакты</a>
@@ -642,6 +642,39 @@
           </div>
         </div>
       </section>
+      <section class="section player-section" id="player">
+        <div class="container">
+          <h2 class="section__title player__title">как мы работаем</h2>
+          <div class="player-section__container">
+            <div class="player">
+              <div class="player__wrapper">
+                <div class="player__elem" id="yt-player"></div>
+                <div class="player__splash"></div>
+              </div>
+              <div class="player__controls">
+                <button class="player__start"></button>
+                <div class="player__playback">
+                  <button class="player__playback-button"></button>
+                </div>
+                <!-- <div class="player__duration">
+                  <span class="player__duration-completed">0:00</span> : 
+                  <span class="player__duration-estimated">0:00</span>
+                </div> -->
+                <div class="player__volume">
+                  <div class="player__volume-img">
+                    <svg class="volume-image">
+                      <use xlink:href="img/icons/sprite.svg#volume"></use>
+                    </svg>
+                  </div>
+                  <div class="player__volume-wrap">
+                    <button class="player__volume-button"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section order-section section--font-color--green" id="order">
         <div class="container">
           <h2 class="section__title">Закажите доставку</h2>
@@ -844,7 +877,7 @@
             <a href="#reviews" class="menu__link">Отзывы</a>
           </li>
           <li class="menu__item">
-            <a href="#order" class="menu__link">Как мы работаем</a>
+            <a href="#player" class="menu__link">Как мы работаем</a>
           </li>
           <li class="menu__item">
             <a href="#contacts" class="menu__link">Контакты</a>
@@ -858,10 +891,12 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="js/hamburger.js"></script>
+  <script src="js/slider.js"></script>
   <script src="js/team-accordeon.js"></script>
   <script src="js/bars-accordeon.js"></script>
-  <script src="js/slider.js"></script>
   <script src="js/slide-show.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="js/player.js"></script>
   <script src="js/modal.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
   <script src="js/map.js"></script>

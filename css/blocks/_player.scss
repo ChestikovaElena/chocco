@@ -1,0 +1,202 @@
+.player {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  
+  &:before {
+    content: url("../img/bg/menu/leaf-left.png");
+    position: absolute;
+    bottom: rem(-40px);
+    left: rem(-120px);
+  }
+
+  &:after {
+    content: url("../img/bg/menu/leaf-right.png");
+    position: absolute;
+    top: rem(-70px);
+    right: rem(-120px);
+  }
+
+  &__splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../img/content/splash-screen.jpg") center center / cover no-repeat;
+    cursor: pointer;
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: rem(75px);
+      height: rem(110px);
+      content: url("../img/icons/play-big.svg");
+    }
+  }
+
+  &.active {
+    .player__splash {
+      display: none;
+    }
+  }
+
+  &__controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: rem(35px);
+    background-color: #404040;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 rem(10px);
+  }
+
+  &__start {
+    position: relative;
+    cursor: pointer;
+    outline: none;
+
+    &:after {
+      position: absolute;
+      width: rem(14px);
+      height: rem(22px);
+      content: url(../img/icons/play.svg);
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  &.paused {
+    .player__start {
+      width: rem(14px);
+      height: rem(22px);
+      border: none;
+
+      &:after,
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: rem(5px);
+        top: 0;
+        bottom: 0;
+        background-color: #626262;
+      }
+
+      &:after {
+        right: 0;
+        transform: none;
+      }
+
+      &:before {
+        left: 0;
+      }
+    }
+  }
+
+  &__playback {
+    position: relative;
+    width: rem(446px);
+    height: rem(16px);
+
+    &:before {
+      content: "";
+      height: 4px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      background-color: #626262;
+      display: block;
+      transform: translateY(-50%);
+      outline: none;
+      cursor: pointer;
+    }
+
+    &-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background-color: #626262;
+      border-radius: 50%;
+      border: none;
+      width: rem(12px);
+      height: rem(12px);
+      cursor: pointer;
+      outline: none;
+    }
+  }
+
+  &__volume {
+    width: rem(105px);
+    display: flex;
+    align-items: center;
+
+    &-wrap {
+      position: relative;
+      width: rem(60px);
+      height: rem(16px);
+
+      &:before {
+        content: "";
+        height: rem(4px);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        background-color: #626262;
+        display: block;
+        transform: translateY(-50%);
+        outline: none;
+        cursor: pointer;
+      }
+    }
+
+    &-img {
+      margin-right: rem(23px);
+      display: flex;
+      align-items: center;
+      position: relative;
+
+        &:after {
+          position: absolute;
+          top: rem(-10px);
+          right: rem(-10px);
+          content: "";
+          color: #626262;
+          font-weight: 700;
+        }
+
+      &.active:after {
+        content: "x";
+      }
+
+      .volume-image {
+        width: rem(14px);
+        height: rem(17px);
+        fill: #626262;
+      }
+    }
+
+    &-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 50%;
+      background-color: #626262;
+      border-radius: 50%;
+      border: none;
+      width: rem(12px);
+      height: rem(12px);
+      cursor: pointer;
+      outline: none;
+    }
+  }
+}
