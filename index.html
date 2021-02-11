@@ -14,7 +14,7 @@
 <body>
   <div class="wrapper">
     <div class="maincontent">
-      <section class="hero">
+      <section data-sidemenu-theme="white" data-section-id="hero" class="hero">
         <div class="container hero__container">
           <header class="header">
             <svg class="logo">
@@ -23,25 +23,25 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="#benefits" class="menu__link">О нас</a>
+                  <a href="#" data-scroll-to="benefits" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#products" class="menu__link">Батончики</a>
+                  <a href="#" data-scroll-to="products" class="menu__link">Батончики</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#team" class="menu__link">Команда</a>
+                  <a href="#team" data-scroll-to="team" class="menu__link">Команда</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#bars" class="menu__link">Меню</a>
+                  <a href="#bars" data-scroll-to="bars" class="menu__link">Меню</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#reviews" class="menu__link">Отзывы</a>
+                  <a href="#reviews" data-scroll-to="reviews" class="menu__link">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#player" class="menu__link">Как мы работаем</a>
+                  <a href="#player" data-scroll-to="player" class="menu__link">Как мы работаем</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#contacts" class="menu__link">Контакты</a>
+                  <a href="#contacts" data-scroll-to="contacts" class="menu__link">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -57,7 +57,7 @@
           <div class="hero__section-title">
             <h1 class="hero__title">Натуральные шоколадные батончики</h1>
             <p class="hero__title-desc">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</p>
-            <a href="#" class="btn btn--theme--white">Заказать</a>
+            <a href="#" data-scroll-to="order" class="btn btn--theme--white">Заказать</a>
           </div>
           <div class="hero__section-icons">
             <ul class="features">
@@ -89,7 +89,7 @@
           </div>
         </div>
       </section>
-      <section class="section benefits-section" id="benefits">
+      <section data-sidemenu-theme="blue" data-section-id="benefits" class="section benefits-section" id="benefits">
         <div class="container">
           <div class="headline">
             <h2 class="section__title headline__title">Почему CHOCCO?</h2>
@@ -154,7 +154,7 @@
           </ul>
         </div>
       </section>
-      <section class="section products-section" id="products">
+      <section data-sidemenu-theme="blue" data-section-id="products" class="section products-section" id="products">
         <div class="container">
           <div class="products-slider">
             <div class="product-slider__arrows">
@@ -372,7 +372,7 @@
           </div>
         </div>
       </section>
-      <section class="section team-section" id="team">
+      <section data-sidemenu-theme="blue" data-section-id="team" class="section team-section" id="team">
         <div class="container">
           <h2 class="section__title team__title">команда</h2>
           <ul class="team__list team__list--version--desktop members">
@@ -517,7 +517,7 @@
           </ul>
         </div>
       </section>
-      <section class="section bars-section" id="bars">
+      <section data-sidemenu-theme="white" data-section-id="bars" class="section bars-section" id="bars">
         <div class="wrapper">
           <h2 class="section__title bars__title">меню</h2>
           <ul class="bars__list bars">
@@ -555,7 +555,7 @@
           
         </div>
       </section>
-      <section class="section reviews-section" id="reviews">
+      <section data-sidemenu-theme="blue" data-section-id="reviews" class="section reviews-section" id="reviews">
         <div class="container">
           <h2 class="section__title reviews__title">отзывы</h2>
           <div class="reviews">
@@ -642,7 +642,7 @@
           </div>
         </div>
       </section>
-      <section class="section player-section" id="player">
+      <section data-sidemenu-theme="blue" data-section-id="player" class="section player-section" id="player">
         <div class="container">
           <h2 class="section__title player__title">как мы работаем</h2>
           <div class="player-section__container">
@@ -662,9 +662,7 @@
                 </div> -->
                 <div class="player__volume">
                   <div class="player__volume-img">
-                    <svg class="volume-image">
-                      <use xlink:href="img/icons/sprite.svg#volume"></use>
-                    </svg>
+                    <img src="../img/icons/volume.png" alt="иконка отключение/включение звука">
                   </div>
                   <div class="player__volume-wrap">
                     <button class="player__volume-button"></button>
@@ -675,7 +673,7 @@
           </div>
         </div>
       </section>
-      <section class="section order-section section--font-color--green" id="order">
+      <section data-sidemenu-theme="white" data-section-id="order" class="section order-section section--font-color--green" id="order">
         <div class="container">
           <h2 class="section__title">Закажите доставку</h2>
           <form class="form">
@@ -769,7 +767,7 @@
           </div>
         </div>
       </section>
-      <section class="section contacts-section" id="contacts">
+      <section data-sidemenu-theme="blue" data-section-id="contacts" class="section contacts-section" id="contacts">
         <div class="map" id="map"></div>
         <footer class="footer">
           <div class="container footer__container">
@@ -824,31 +822,31 @@
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
       <li class="fixed-menu__item fixed-menu__item--active">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" data-scroll-to="hero" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" data-scroll-to="benefits" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" data-scroll-to="products" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" data-scroll-to="team" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" data-scroll-to="bars" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" data-scroll-to="reviews" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" data-scroll-to="player" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" data-scroll-to="order" class="fixed-menu__link"></a>
       </li>
       <li class="fixed-menu__item">
-        <a href="#" class="fixed-menu__link"></a>
+        <a href="#" data-scroll-to="contacts" class="fixed-menu__link"></a>
       </li>
     </ul>
   </nav>
@@ -862,25 +860,25 @@
       <nav class="menu menu--vertical">
         <ul class="menu__list">
           <li class="menu__item">
-            <a href="#benefits" class="menu__link">О нас</a>
+            <a href="#" data-scroll-to="benefits" class="menu__link">О нас</a>
           </li>
           <li class="menu__item">
-            <a href="#products" class="menu__link">Батончики</a>
+            <a href="#" data-scroll-to="products" class="menu__link">Батончики</a>
           </li>
           <li class="menu__item">
-            <a href="#team" class="menu__link">Команда</a>
+            <a href="#" data-scroll-to="team" class="menu__link">Команда</a>
           </li>
           <li class="menu__item">
-            <a href="#bars" class="menu__link">Меню</a>
+            <a href="#" data-scroll-to="bars" class="menu__link">Меню</a>
           </li>
           <li class="menu__item">
-            <a href="#reviews" class="menu__link">Отзывы</a>
+            <a href="#" data-scroll-to="reviews" class="menu__link">Отзывы</a>
           </li>
           <li class="menu__item">
-            <a href="#player" class="menu__link">Как мы работаем</a>
+            <a href="#" data-scroll-to="player" class="menu__link">Как мы работаем</a>
           </li>
           <li class="menu__item">
-            <a href="#contacts" class="menu__link">Контакты</a>
+            <a href="#" data-scroll-to="contacts" class="menu__link">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -890,7 +888,9 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script src="js/hamburger.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+  <!-- <script src="js/hamburger.js"></script> -->
   <script src="js/slider.js"></script>
   <script src="js/team-accordeon.js"></script>
   <script src="js/bars-accordeon.js"></script>
@@ -900,6 +900,7 @@
   <script src="js/modal.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
   <script src="js/map.js"></script>
+  <script src="js/ops.js"></script>
 </body>
 
 </html>

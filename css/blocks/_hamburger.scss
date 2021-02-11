@@ -23,6 +23,12 @@
   border-radius: 10px;
 }
 
+.hamburger--shadowed {
+  .hamburger__plank {
+    background-color: $blue;
+  }
+}
+
 .hamburger--active{
 
   .hamburger__plank:nth-child(1) {

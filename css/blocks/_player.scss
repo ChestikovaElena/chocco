@@ -7,15 +7,28 @@
   &:before {
     content: url("../img/bg/menu/leaf-left.png");
     position: absolute;
-    bottom: rem(-40px);
-    left: rem(-120px);
+    bottom: -10%;
+    left: -19%;
+
+    @media screen and (max-width: 925px) {
+      left: -10%;
+    }
+
+    @include tablets {
+      left: -20%;
+      bottom: 20%;
+    }
   }
 
   &:after {
     content: url("../img/bg/menu/leaf-right.png");
     position: absolute;
-    top: rem(-70px);
-    right: rem(-120px);
+    top: -15.5%;
+    right: -19%;
+
+    @media screen and (max-width: 925px) {
+      right: -8%;
+    }
   }
 
   &__splash {
@@ -34,7 +47,7 @@
       transform: translate(-50%, -50%);
       width: rem(75px);
       height: rem(110px);
-      content: url("../img/icons/play-big.svg");
+      content: url("../img/icons/play-white.png");
     }
   }
 
@@ -66,7 +79,7 @@
       position: absolute;
       width: rem(14px);
       height: rem(22px);
-      content: url(../img/icons/play.svg);
+      content: url("../img/icons/play-grey.png");
       top: 50%;
       transform: translate(-50%, -50%);
     }
@@ -164,6 +177,8 @@
       display: flex;
       align-items: center;
       position: relative;
+      width: rem(14px);
+      height: rem(17px);
 
         &:after {
           position: absolute;
@@ -176,12 +191,6 @@
 
       &.active:after {
         content: "x";
-      }
-
-      .volume-image {
-        width: rem(14px);
-        height: rem(17px);
-        fill: #626262;
       }
     }
 

@@ -10,12 +10,26 @@
   }
 
   &__container {
-    height: rem(405px);
-    width: rem(660px);
+    height: 405px;
+    width: 660px;
     margin: 0 auto;
+
+    @include tablets {
+      height: 352px;
+      width: 594px;
+    }
+
+    @include phones {
+      height: 233px;
+      width: 394px;
+    }
   }
 }
 
 .player__title {
   margin-bottom: rem(31px);
+
+  @include tablets {
+    margin-bottom: 40px;
+  }
 }

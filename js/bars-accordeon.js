@@ -29,11 +29,11 @@ function closeActiveItem(item) {
 
 function openItem(item) {
   const contentWrap = item.querySelector('[data-open]');
-  //const content = contentWrap.firstElementChild;
+  const textBlock = contentWrap.firstElementChild;
   const openWidth = calctWidth(item);
 
-  //content.style.minWidth = `${openWidth}px`;
   contentWrap.style.width = `${openWidth}px`;
+  textBlock.style.width = `${openWidth}px`;
   item.classList.add('active');
 
 }
@@ -50,6 +50,7 @@ function calctWidth(item) {
   const windowWidth = window.innerWidth;
   const triggers = list.querySelectorAll('[data-trigger]');
   const triggersWidth = triggers[0].clientWidth * triggers.length;
+
   const isTablet = window.matchMedia('(max-width: 768px) && (min-width: 480px)').matches;
   const isMobile = window.matchMedia('(max-width: 480px)').matches;
   

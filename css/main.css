@@ -87,8 +87,14 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -101,7 +107,7 @@ body {
 .hero {
   background: url("../img/bg/leaf-big.png") right bottom no-repeat;
   background-color: #61C4D9;
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   color: #fff;
   position: relative;
@@ -332,7 +338,7 @@ body {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   min-height: 36.1111111111rem;
   display: flex;
   flex-direction: column;
@@ -1075,7 +1081,6 @@ body {
 
 .bar.active .bar__content {
   opacity: 1;
-  transition: 5s;
 }
 
 .reviews-section {
@@ -1258,13 +1263,30 @@ body {
   z-index: 999;
 }
 .player-section__container {
-  height: 22.5rem;
-  width: 36.6666666667rem;
+  height: 405px;
+  width: 660px;
   margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .player-section__container {
+    height: 352px;
+    width: 594px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .player-section__container {
+    height: 233px;
+    width: 394px;
+  }
 }
 
 .player__title {
   margin-bottom: 1.7222222222rem;
+}
+@media screen and (max-width: 768px) {
+  .player__title {
+    margin-bottom: 40px;
+  }
 }
 
 .player {
@@ -1276,14 +1298,30 @@ body {
 .player:before {
   content: url("../img/bg/menu/leaf-left.png");
   position: absolute;
-  bottom: -2.2222222222rem;
-  left: -6.6666666667rem;
+  bottom: -10%;
+  left: -19%;
+}
+@media screen and (max-width: 925px) {
+  .player:before {
+    left: -10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .player:before {
+    left: -20%;
+    bottom: 20%;
+  }
 }
 .player:after {
   content: url("../img/bg/menu/leaf-right.png");
   position: absolute;
-  top: -3.8888888889rem;
-  right: -6.6666666667rem;
+  top: -15.5%;
+  right: -19%;
+}
+@media screen and (max-width: 925px) {
+  .player:after {
+    right: -8%;
+  }
 }
 .player__splash {
   position: absolute;
@@ -1301,7 +1339,7 @@ body {
   transform: translate(-50%, -50%);
   width: 4.1666666667rem;
   height: 6.1111111111rem;
-  content: url("../img/icons/play-big.svg");
+  content: url("../img/icons/play-white.png");
 }
 .player.active .player__splash {
   display: none;
@@ -1327,7 +1365,7 @@ body {
   position: absolute;
   width: 0.7777777778rem;
   height: 1.2222222222rem;
-  content: url(../img/icons/play.svg);
+  content: url("../img/icons/play-grey.png");
   top: 50%;
   transform: translate(-50%, -50%);
 }
@@ -1411,6 +1449,8 @@ body {
   display: flex;
   align-items: center;
   position: relative;
+  width: 0.7777777778rem;
+  height: 0.9444444444rem;
 }
 .player__volume-img:after {
   position: absolute;
@@ -1422,11 +1462,6 @@ body {
 }
 .player__volume-img.active:after {
   content: "x";
-}
-.player__volume-img .volume-image {
-  width: 0.7777777778rem;
-  height: 0.9444444444rem;
-  fill: #626262;
 }
 .player__volume-button {
   position: absolute;
@@ -1813,22 +1848,6 @@ body {
   right: 3%;
   z-index: 100;
 }
-@media screen and (max-width: 768px) {
-  .fixed-menu {
-    display: none;
-  }
-}
-
-.fixed-menu__item {
-  margin-bottom: 0.2777777778rem;
-}
-.fixed-menu__item--active .fixed-menu__link {
-  border-color: #fff;
-}
-.fixed-menu__item:last-child {
-  margin-bottom: 0;
-}
-
 .fixed-menu__link {
   width: 0.8888888889rem;
   height: 0.8888888889rem;
@@ -1848,6 +1867,27 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.fixed-menu--shadowed .fixed-menu__link:before {
+  background-color: #61C4D9;
+}
+.fixed-menu--shadowed .fixed-menu__item--active .fixed-menu__link {
+  border-color: #61C4D9;
+}
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
+}
+
+.fixed-menu__item {
+  margin-bottom: 0.2777777778rem;
+}
+.fixed-menu__item--active .fixed-menu__link {
+  border-color: #fff;
+}
+.fixed-menu__item:last-child {
+  margin-bottom: 0;
 }
 
 .hamburger {
@@ -1874,6 +1914,10 @@ body {
   background-color: #fff;
   height: 4px;
   border-radius: 10px;
+}
+
+.hamburger--shadowed .hamburger__plank {
+  background-color: #61C4D9;
 }
 
 .hamburger--active .hamburger__plank:nth-child(1) {
