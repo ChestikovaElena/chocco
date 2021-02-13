@@ -39,18 +39,16 @@
   &__title {
     position: absolute;
     bottom: 28%;
-    left: -325%;
-    transform: rotate(-90deg);
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg);
     color: #fff;
     font-size: rem(48px);
     font-weight: 700;
     width: 50vh;
     height: 50px;
     z-index: 99;
-
-    @include phones {
-      left: -373%;
-    }
+    display: inline-block;
+    white-space: nowrap;
   }
 
   &__content-wrap {

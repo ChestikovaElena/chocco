@@ -149,7 +149,6 @@ hamburgerElement.click(e => {
     hamburgerElement.removeClass("hamburger--active");
     overlayElement.removeClass("overlay--active");
   } else {
-    console.log(hamburgerElement);
     hamburgerElement.addClass("hamburger--active");
     overlayElement.addClass("overlay--active");
     hamburgerElement.removeClass("hamburger--shadowed");

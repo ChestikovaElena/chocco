@@ -645,7 +645,25 @@
       <section data-sidemenu-theme="blue" data-section-id="player" class="section player-section" id="player">
         <div class="container">
           <h2 class="section__title player__title">как мы работаем</h2>
-          <div class="player-section__container">
+          <div class="video__container">
+            <div class="video__player">
+              <video id="video-player" poster="img/content/splash-screen.jpg">
+                <source src="video/mozart-turkish-march.mp4" type="video/mp4">
+              </video>
+              <img src="img/icons/play-white.png" class="play video__player-img" alt="">
+            </div>
+            <div class="video__toolbar">
+              <div class="duration">
+                <div class="play duration__img"></div>
+                <input type="range" class="duration__length" id="durationLevel">
+              </div>
+              <div class="sound">
+                <div class="sound__img" id="mic"></div>
+                <input type="range" class="duration__length duration__length--other sound__volume" id="micLevel">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="player-section__container">
             <div class="player">
               <div class="player__wrapper">
                 <div class="player__elem" id="yt-player"></div>
@@ -656,10 +674,10 @@
                 <div class="player__playback">
                   <button class="player__playback-button"></button>
                 </div>
-                <!-- <div class="player__duration">
+                <div class="player__duration">
                   <span class="player__duration-completed">0:00</span> : 
                   <span class="player__duration-estimated">0:00</span>
-                </div> -->
+                </div>
                 <div class="player__volume">
                   <div class="player__volume-img">
                     <img src="img/icons/volume.png" alt="иконка отключение/включение звука">
@@ -670,7 +688,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <section data-sidemenu-theme="white" data-section-id="order" class="section order-section section--font-color--green" id="order">
