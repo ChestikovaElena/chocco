@@ -1,0 +1,95 @@
+.hero {
+  background: url("./img/bg/leaf-big.png") right bottom no-repeat;
+  background-color: $blue;
+  height: 100%;
+  min-height: 650px;
+  color: #fff;
+  position: relative;
+
+  @include tablets {
+    background-position: right bottom 85%;
+  }
+
+  &:before, &:after {
+    @include tablets {
+      display: none;
+    }
+  }
+
+  &:before {
+    position: absolute;
+    bottom: -40px;
+    left: 2%;
+    content: url("./img/bg/leaf-left.png");
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -55px;
+    right: 0;
+    content: url("./img/bg/leafs-berries.png");
+  }
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 24px 0 45px;
+  background:  url("./img/bg/bar.png") right center / 50% auto no-repeat;
+
+  @include tablets {
+    background: none;
+  }
+}
+
+.hero__section-title {
+  width: 46%;
+
+  @include tablets {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &:before {
+      content: "";
+      width: 316px;
+      height: 316px;
+      background: url("./img/bg/tablets/bars-berries.png") center center / contain no-repeat;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.hero__section-icons {
+  @include tablets {
+    display: none;
+  }
+}
+
+.hero__title {
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.hero__title-desc {
+  font-size: 21px;
+  margin-bottom: 28px;
+  padding-right: 10%;
+
+  @include tablets {
+    padding: 0 25%;
+  }
+
+  @include phones {
+    padding: 0 15%;
+  }
+}

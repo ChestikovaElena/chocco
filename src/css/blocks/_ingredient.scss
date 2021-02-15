@@ -1,0 +1,33 @@
+.ingredient {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.ingredient__col {
+  display: flex;
+  align-items: center;
+}
+
+.ingredient__col--align--right {
+  flex-shrink: 0;
+}
+
+.ingredient__icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.ingredient__name {
+  font-weight: 500;
+  margin-right: 12px;
+}

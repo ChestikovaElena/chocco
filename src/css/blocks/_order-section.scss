@@ -1,0 +1,27 @@
+.order-section {
+  background: url("./img/bg/pattern-berry.jpg") center center no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &:before {
+    content: url("./img/bg/blueberry.png");
+    position: absolute;
+    bottom: 80px;
+    left: 5%;
+    
+    @include tablets {
+      display: none;
+    }
+  }
+
+  &:after {
+    content: url("./img/bg/leaf-right.png");
+    position: absolute;
+    bottom: 45px;
+    right: 1%;
+
+    @include tablets {
+      display: none;
+    }
+  }
+}

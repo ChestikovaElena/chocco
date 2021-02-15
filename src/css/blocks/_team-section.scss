@@ -1,0 +1,11 @@
+.team-section {
+  position: relative;
+  
+  &:before {
+    content: url("./img/bg/raspberry.png");
+    position: absolute;
+    bottom: -55px;
+    left: 30px;
+    z-index: 9999;
+  }
+}

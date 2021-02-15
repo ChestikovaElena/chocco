@@ -1,0 +1,19 @@
+.contacts {
+  font-size: 21px;
+
+  @include phones {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contacts__phone-number {
+  color: $darkGreen;
+  font-size: 21px;
+
+  .phone-number__icon-elem {
+    fill: $darkGreen;
+  }
+}

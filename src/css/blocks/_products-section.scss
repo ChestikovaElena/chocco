@@ -1,0 +1,63 @@
+.products-section {
+  background-color: #F8FAF9;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    bottom: -243px;
+    right: 0;
+    content: url("./img/bg/bluberries-leaf.png");
+
+    @include tablets {
+      bottom: -170px;
+    }
+
+    @include phones {
+      bottom: -255px;
+      right: -50px;
+    }
+  }
+}
+
+.products-slider {
+  position: relative;
+}
+
+.product-slider__arrow {
+  background: url("./img/icons/products/left.png") no-repeat;
+  background-size: contain;
+  display: block;
+  width: 13px;
+  height: 28px;
+  position: absolute;
+  top: 50%;
+  z-index: 90;
+  font-size: 0;
+
+  &--dir--left {
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &--dir--right {
+    right: 0;
+    transform: translateY(-50%) scale(-1, 1);
+  }
+
+  @include tablets {
+    top: 25%;
+  }
+    
+  @include phones {
+    top: 20%;
+  }
+}
+
+.products {
+  padding: 0 30px 0 15px;
+  position: relative;
+
+  @include tablets {
+    padding: 0;
+  }
+}
