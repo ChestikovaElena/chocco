@@ -7,15 +7,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 91px;
-  height: 91px;
-  margin-bottom: 20px;
+  width: rem(91px);
+  height: rem(91px);
+  margin-bottom: rem(20px);
   text-decoration: none;
   cursor: pointer;
   background-color: #86C3D7;
   border-radius: 4px;
   color: #fff;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 700;
   position: relative;
 
@@ -25,10 +25,10 @@
 }
 
 .btn-icon {
-  width: 46px;
-  height: 46px;
+  width: rem(46px);
+  height: rem(46px);
   fill: #fff;
-  margin-bottom: 5px;
+  margin-bottom: rem(5px);
 }
 
 .btn-text {
@@ -46,14 +46,14 @@
   padding: 25px;
   border-radius: 4px;
   width: 27vw;
-  max-width: 273px;
+  max-width: rem(273px);
 
   &:before {
     content: "";
     display: block;
-    width: 91px;
-    height: 280px;
-    left: -91px;
+    width: rem(91px);
+    height: rem(280px);
+    left: rem(-91px);
     right: 0;
     top: 0;
     background-color: transparent;

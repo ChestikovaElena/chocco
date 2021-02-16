@@ -1,4 +1,4 @@
-(function () {
+// (function () {
   let myMap;
   const init = () => {
     myMap = new ymaps.Map("map", {
@@ -17,7 +17,7 @@
     const myCollection = new ymaps.GeoObjectCollection({}, {
       draggable: false,
       iconLayout: 'default#image',
-      iconImageHref: 'img/icons/marker.svg',
+      iconImageHref: './img/icons/marker.png',
       iconImageSize: [46, 57],
       iconImageOffset: [-35, -52],
       hintContent: 'Подсказка'
@@ -34,4 +34,4 @@
   };
 
   ymaps.ready(init);
-})()
+// })()

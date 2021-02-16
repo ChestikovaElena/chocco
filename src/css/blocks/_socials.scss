@@ -3,7 +3,7 @@
 }
 
 .socials__item {
-  margin-left: 15px;
+  margin-left: rem(15px);
 
   &:first-child {
     margin-left: 0;
@@ -21,7 +21,7 @@
 }
 
 .socials__icon {
-  width: 20px;
-  height: 20px;
+  width: rem(20px);
+  height: rem(20px);
   fill: #B3B3B3;
 }

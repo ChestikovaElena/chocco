@@ -3,8 +3,8 @@
 }
 
 .feature__icon {
-  width: 45px;
-  margin-right: 7px;
+  width: rem(45px);
+  margin-right: rem(7px);
 }
 
 .feature__icon-elem {
@@ -14,6 +14,6 @@
 }
 
 .feature__text {
-  font-size: 16px;
-  max-width: 85px;
+  font-size: rem(16px);
+  max-width: rem(85px);
 }

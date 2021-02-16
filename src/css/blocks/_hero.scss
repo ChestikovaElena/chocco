@@ -2,7 +2,7 @@
   background: url("./img/bg/leaf-big.png") right bottom no-repeat;
   background-color: $blue;
   height: 100%;
-  min-height: 650px;
+  min-height: rem(650px);
   color: #fff;
   position: relative;
 
@@ -18,14 +18,14 @@
 
   &:before {
     position: absolute;
-    bottom: -40px;
+    bottom: rem(-40px);
     left: 2%;
     content: url("./img/bg/leaf-left.png");
   }
 
   &::after {
     position: absolute;
-    bottom: -55px;
+    bottom: rem(-55px);
     right: 0;
     content: url("./img/bg/leafs-berries.png");
   }
@@ -36,7 +36,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 45px;
+  padding: rem(24px) 0 rem(45px);
   background:  url("./img/bg/bar.png") right center / 50% auto no-repeat;
 
   @include tablets {
@@ -58,10 +58,10 @@
 
     &:before {
       content: "";
-      width: 316px;
-      height: 316px;
+      width: rem(316px);
+      height: rem(316px);
       background: url("./img/bg/tablets/bars-berries.png") center center / contain no-repeat;
-      margin-bottom: 15px;
+      margin-bottom: rem(15px);
     }
   }
 }
@@ -73,16 +73,16 @@
 }
 
 .hero__title {
-  font-size: 48px;
+  font-size: rem(48px);
   line-height: 1.1;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
   text-transform: uppercase;
 }
 
 .hero__title-desc {
-  font-size: 21px;
-  margin-bottom: 28px;
+  font-size: rem(21px);
+  margin-bottom: rem(28px);
   padding-right: 10%;
 
   @include tablets {

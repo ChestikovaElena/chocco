@@ -1,12 +1,12 @@
 .order-section {
-  background: url("./img/bg/pattern-berry.jpg") center center no-repeat;
+  background: url("./img/bg/pattern-berry.webp") center center no-repeat;
   background-size: cover;
   position: relative;
 
   &:before {
     content: url("./img/bg/blueberry.png");
     position: absolute;
-    bottom: 80px;
+    bottom: rem(80px);
     left: 5%;
     
     @include tablets {
@@ -17,7 +17,7 @@
   &:after {
     content: url("./img/bg/leaf-right.png");
     position: absolute;
-    bottom: 45px;
+    bottom: rem(45px);
     right: 1%;
 
     @include tablets {

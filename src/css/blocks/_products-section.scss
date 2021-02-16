@@ -4,17 +4,17 @@
 
   &:after {
     position: absolute;
-    bottom: -243px;
+    bottom: rem(-243px);
     right: 0;
     content: url("./img/bg/bluberries-leaf.png");
 
     @include tablets {
-      bottom: -170px;
+      bottom: rem(-170px);
     }
 
     @include phones {
-      bottom: -255px;
-      right: -50px;
+      bottom: rem(-255px);
+      right: rem(-50px);
     }
   }
 }
@@ -54,7 +54,7 @@
 }
 
 .products {
-  padding: 0 30px 0 15px;
+  padding: 0 rem(30px) 0 rem(15px);
   position: relative;
 
   @include tablets {

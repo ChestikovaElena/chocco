@@ -4,8 +4,8 @@
   &:before {
     content: url("./img/bg/raspberry.png");
     position: absolute;
-    bottom: -55px;
-    left: 30px;
+    bottom: rem(-55px);
+    left: rem(30px);
     z-index: 9999;
   }
 }

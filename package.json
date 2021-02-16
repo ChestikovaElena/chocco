@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "gulp": "cross-env NODE_ENV=dev gulp",
-    "build": "cross-env NODE_ENV=prod gulp build"
+    "build": "cross-env NODE_ENV=prod gulp"
   },
   "repository": {
     "type": "git",
@@ -41,7 +41,6 @@
     "gulp-rm": "^2.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sass-glob": "^1.1.0",
-    "gulp-smile-px2rem": "^0.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-sprite-generator": "^0.2.3",
     "gulp-svg-sprite": "^1.5.0",

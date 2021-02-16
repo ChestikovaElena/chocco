@@ -8,18 +8,18 @@
 }
 
 .benefit__image {
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
 
   @include phones {
     margin-bottom: 0;
-    margin-right: 10px;
+    margin-right: rem(10px);
   }
 }
 
 .benefit__image-wrapper {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: rem(126px);
+  height: rem(126px);
   position: relative;
   background-color: #F2F5F4;
   border-radius: 50%;
@@ -37,11 +37,11 @@
 }
 
 .benefit__title {
-  font-size: 27px;
+  font-size: rem(27px);
   font-weight: 700;
   line-height: 1.18;
   color: #292929;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 }
 
 .benefit__desc {

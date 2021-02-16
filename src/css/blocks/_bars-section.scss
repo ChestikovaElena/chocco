@@ -6,7 +6,7 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    background-image: url("./img/bg/menu.jpg");
+    background-image: url("./img/bg/menu.webp");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -22,10 +22,10 @@
   }
 }
 
-.bars__title {
+.section__title.bars__title {
   position: absolute;
   color: #fff;
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: 700;
   text-transform: uppercase;
   top: 10%;

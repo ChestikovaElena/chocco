@@ -1,6 +1,6 @@
 .menu {
-  margin: 0 30px;
-  padding-top: 5px;
+  margin: 0 rem(30px);
+  padding-top: rem(5px);
 
   @include tablets {
     display: none;
@@ -12,12 +12,12 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: -10px;
+  margin-bottom: rem(-10px);
 }
 
 .menu__item {
-  margin-right: 27px;
-  margin-bottom: 10px;
+  margin-right: rem(27px);
+  margin-bottom: rem(10px);
 
   &:last-child {
     margin-right: 0;

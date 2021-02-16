@@ -1,4 +1,4 @@
-(function () {
+// (function () {
   document.querySelector('.bars__list').addEventListener('click', (e) => {
     e.preventDefault();
     const trigger = e.target.closest('[data-trigger]');
@@ -63,4 +63,4 @@
       return (windowWidth - triggersWidth) > 524 ? 524 : windowWidth - triggersWidth;
     }
   }
-})()
+// })()

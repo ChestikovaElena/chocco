@@ -50,9 +50,6 @@
     playButtonVideo.classList.toggle("video__player-img--hidden");
     const playButtonGrey = document.querySelector(".duration__img");
     
-    console.log(playButtonVideo);
-    console.log(video);
-
     if (video.paused) {
       intervalId = setInterval(updateDuration, NORMAL_UPDATE_RANGE);
       video.play();
@@ -78,7 +75,7 @@
   }
 
   function stopInterval() {
-    console.log(video);
+    
     video.pause();
     clearInterval(intervalId);
   }
@@ -87,7 +84,7 @@
     const volumeIcon = document.querySelector(".sound__img");
 
     if (video.volume === 0) {
-      console.log('on');
+      
       video.volume = soundLevel;
       soundControl.value = soundLevel * MAX_SOUND_VALUE;
       volumeIcon.classList.remove("sound__img--off");
@@ -96,7 +93,7 @@
       video.volume = 0;
       soundControl.value = 0;
       volumeIcon.classList.add("sound__img--off");
-      console.log('off');
+      
     }
   }
 

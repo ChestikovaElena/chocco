@@ -3,7 +3,7 @@
   
   &:before {
     position: absolute;
-    bottom: -100px;
+    bottom: rem(-100px);
     right: 0;
     content: url("./img/bg/leaf-berry.png");
     z-index: 999;
@@ -27,7 +27,7 @@
 }
 
 .player__title {
-  margin-bottom: 31px;
+  margin-bottom: rem(31px);
 
   @include tablets {
     margin-bottom: 40px;

@@ -13,8 +13,8 @@
   &:before {
     content: url("./img/bg/rasberry.png");
     position: absolute;
-    bottom: -120px;
-    left: -50px;
+    bottom: rem(-120px);
+    left: rem(-50px);
     z-index: 9999;
 
     @include phones {

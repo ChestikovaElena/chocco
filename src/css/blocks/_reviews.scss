@@ -1,14 +1,14 @@
 .reviews__title {
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 
   @include tablets {
-    margin-bottom: 35px;
+    margin-bottom: rem(35px);
   }
 }
 
 .reviews__list {
   position: relative;
-  min-height: 280px;
+  min-height: rem(280px);
 }
 
 .reviews__item {
@@ -30,30 +30,30 @@
 .reviews__display {
   background: url("./img/bg/berry-grey.png") right top 15% no-repeat;
   background-color: #F8FAF9;
-  padding: 50px 40px 40px;
-  margin-bottom: 10px;
+  padding: rem(50px) rem(40px) rem(40px);
+  margin-bottom: rem(10px);
   overflow: hidden;
   position: relative;
 
   @include tablets {
-    padding: 60px 20px 25px;
-    margin-bottom: 30px;
+    padding: rem(60px) rem(20px) rem(25px);
+    margin-bottom: rem(30px);
   }
 
   &:before {
     content: "";
     display: block;
-    width: 83px;
-    height: 83px;
+    width: rem(83px);
+    height: rem(83px);
     border-radius: 50%;
     background-color: #fff;
     position: absolute;
-    top: -65px;
+    top: rem(-65px);
     left: 50%;
     transform: translate(-50%);
 
     @include tablets {
-      top: -43px;
+      top: rem(-43px);
     }
   }
 }
@@ -69,12 +69,12 @@
 }
 
 .reviews__avatar {
-  width: 250px;
-  height: 270px;
+  width: rem(250px);
+  height: rem(270px);
 
   @include tablets {
-    width: 135px;
-    height: 135px;
+    width: rem(135px);
+    height: rem(135px);
   }
 }
 
@@ -85,27 +85,27 @@
 }
 
 .reviews__content {
-  margin-left: 40px;
-  margin-top: 20px;
+  margin-left: rem(40px);
+  margin-top: rem(20px);
   width: 51%;
 
   @include tablets {
     margin-left: 0;
-    margin-top: 20px;
+    margin-top: rem(20px);
     width: 97%;
   }
 }
 
 .reviews__subtitle {
-  font-size: 30px;
+  font-size: rem(30px);
   font-weight: 700;
   color: #292929;
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
 }
 
 .reviews__text {
   line-height: 1.23;
-  margin-bottom: 25px;
+  margin-bottom: rem(25px);
 }
 
 .reviews__author {

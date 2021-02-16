@@ -31,7 +31,7 @@
   max-width: 220px;
   max-height: 290px;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 
   @include phones {
     width: 150px;
@@ -44,7 +44,7 @@
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
 
   .member__link-icon {
     transform: rotate(0deg);
@@ -52,11 +52,11 @@
 }
 
 .member__link-name {
-  font-size: 21px;
+  font-size: rem(21px);
   font-weight: 700;
   line-height: 1.2;
   color: #292929;
-  margin-right: 5px;
+  margin-right: rem(5px);
   text-align: center;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .member__position {
-  margin-bottom: 5px;
+  margin-bottom: rem(5px);
 
   @include tablets {
     font-weight: 700;

@@ -1,4 +1,4 @@
-(function () {
+// (function () {
   const validateFields = (form, fieldsArray) => {
     fieldsArray.forEach(field => {
       if(field.val().trim() === "") {
@@ -77,4 +77,4 @@
       inputWrap.find(".form__input--message").addClass("form__input--message--active");
     }
   });
-})()
+// })()
