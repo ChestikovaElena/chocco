@@ -15,6 +15,7 @@ const svgo = require('gulp-svgo');
 const svgSprite = require('gulp-svg-sprite');
 const gulpif = require('gulp-if');
 const imagemin = require('gulp-imagemin');
+const htmlmin = require('gulp-htmlmin');
 
 const env = process.env.NODE_ENV;
 
@@ -26,8 +27,15 @@ task('clean', () => {
   return src(`${DIST_PATH}/**/*`, { read: false }).pipe(rm());
 });
 
-task('copy:html', () => {
+// task('copy:html', () => {
+//   return src(`${SRC_PATH}/*.html`)
+//   .pipe(dest(`${DIST_PATH}`))
+//   .pipe(reload({stream: true}));
+// });
+
+task('html', () => {
   return src(`${SRC_PATH}/*.html`)
+  .pipe(gulpif(env === 'prod', htmlmin({ collapseWhitespace: true })))
   .pipe(dest(`${DIST_PATH}`))
   .pipe(reload({stream: true}));
 });
@@ -114,7 +122,7 @@ task('server', () => {
 
 task('watch', () => {
   watch(`${SRC_PATH}/css/**/*.scss`, series('styles'));
-  watch(`${SRC_PATH}/*.html`, series('copy:html'));
+  watch(`${SRC_PATH}/*.html`, series('html'));
   watch(`${SRC_PATH}/js/*.js`, series('scripts'));
   watch(`${SRC_PATH}/img/icons/*.svg`, series('icons'));
   watch(`${SRC_PATH}/img/**/*.{jpg,png,webp}`, series('images'));
@@ -123,13 +131,13 @@ task('watch', () => {
 task('build',
  series(
    'clean',
-   parallel('copy:html', 'styles', 'scripts', 'icons', 'images', 'video'))
+   parallel('html', 'styles', 'scripts', 'icons', 'images', 'video'))
 );
 
 task('default',
   series(
     'clean',
-    parallel('copy:html', 'styles', 'scripts', 'icons', 'images', 'video'),
+    parallel('html', 'styles', 'scripts', 'icons', 'images', 'video'),
     parallel('server')
   )
 );

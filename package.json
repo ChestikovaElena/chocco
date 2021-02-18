@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ChestikovaElena/chocco#readme",
   "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
     "jquery": "^3.5.1",
     "jquery-touchswipe": "^1.6.19",
     "mobile-detect": "^1.4.4",
