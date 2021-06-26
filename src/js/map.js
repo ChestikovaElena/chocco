@@ -1,5 +1,4 @@
-// (function () {
-  let myMap;
+ let myMap;
   const init = () => {
     myMap = new ymaps.Map("map", {
       center: [55.75147691, 37.59462718],
@@ -34,4 +33,3 @@
   };
 
   ymaps.ready(init);
-// })()
