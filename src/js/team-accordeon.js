@@ -1,4 +1,3 @@
-// (function () {
   function accordeonTeam() {
 
     const members = document.querySelectorAll(".members__item");
@@ -36,4 +35,3 @@
   }
 
   accordeonTeam();
-// })()
